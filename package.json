@@ -2,8 +2,17 @@
   "name": "ui-framework",
   "version": "0.1.0",
   "description": "A modern framework for building responive frontends",
-  "main": "index.js",
+  "keywords": [
+    "css",
+    "design",
+    "postcss",
+    "modern",
+    "ui",
+    "framework"
+  ],
+  "homepage": "https://lunardesign.org/projects/ui-framework",
   "repository": "https://github.com/designbylunar/ui-framework.git",
+  "bugs": "https://github.com/designbylunar/ui-framework/issues/new",
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
   "scripts": {
@@ -11,7 +20,6 @@
     "watch": "postcss src/ui.css -o dist/ui.css --watch",
     "dev": "yarn build && yarn watch"
   },
-  "homepage": "https://lunardesign.org/projects/ui-framework",
   "private": false,
   "devDependencies": {
     "autoprefixer": "10.1.0",
