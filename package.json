@@ -18,6 +18,9 @@
       "pre-commit": "lint-staged"
     }
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "tsdx lint"
+  },
   "homepage": "https://lunardesign.org/projects/ui-framework",
   "repository": "https://github.com/designbylunar/ui-framework.git",
   "bugs": "https://github.com/designbylunar/ui-framework/issues/new",
