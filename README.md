@@ -7,12 +7,7 @@ This is available via both [NPM]() and [GitHub Packages]() via `yarn add ui-fram
 ## Documentation
 You can access all the documentation for UI Framework [online](https://docs.uiframework.com) or via the `docs/` folder.
 
-## Building
-1. Install [Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com)
-2. Install dependencies (`yarn`)
-3. Build (`yarn build`)
+## Acknowledgements
+This framework was designed and developed by the Lunar Design team, with most of the desings done by [Jack Merrill](https://github.com/jackmerrill) and most of the development by [Matt Ronchetto](https://github.com/doamatto).
 
-The built and minimised CSS files will be in the `dist/` directory.
-
-## Contributing
-TODO: Add information
+A special thank you to [Headless UI](https://github.com/tailwindlabs/headlessui) and [a17t](https://github.com/milesmcc/a17t) for having amazing documentation to help us build our CI systems for these packages.
