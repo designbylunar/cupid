@@ -29,7 +29,6 @@
     "postcss-each": "0.10.0",
     "postcss-import": "14.0.0",
     "postcss-nested": "5.0.3",
-    "postcss-preset-env": "6.7.0",
-    "tailwindcss": "2.0.2"
+    "postcss-preset-env": "6.7.0"
   }
 }

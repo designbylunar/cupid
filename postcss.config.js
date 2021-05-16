@@ -5,7 +5,6 @@ module.exports = {
     'postcss-preset-env': {},
     'postcss-nested': {},
     cssnano: {},
-    tailwindcss: {},
     autoprefixer: {},
   },
 }
