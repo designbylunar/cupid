@@ -10,25 +10,39 @@
     "ui",
     "framework"
   ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "homepage": "https://lunardesign.org/projects/ui-framework",
   "repository": "https://github.com/designbylunar/ui-framework.git",
   "bugs": "https://github.com/designbylunar/ui-framework/issues/new",
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
   "scripts": {
-    "build": "postcss src/ui.css -o dist/ui.css && postcss src/tailwind.css -o dist/tailwind.css",
-    "watch": "postcss src/ui.css -o dist/ui.css --watch",
-    "dev": "yarn build && yarn watch"
+    "react": "yarn workspace @ui-framework/react",
+    "shared": "yarn workpsace @ui-framework/shared",
+    "build": "yarn workspaces run build",
+    "test": "./scripts/test.sh",
+    "lint": "./scripts/lint.sh"
   },
-  "private": false,
+  "private": true,
   "devDependencies": {
     "autoprefixer": "10.1.0",
     "cssnano": "4.1.10",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "postcss": "8.2.2",
     "postcss-cli": "8.3.1",
     "postcss-each": "0.10.0",
     "postcss-import": "14.0.0",
     "postcss-nested": "5.0.3",
-    "postcss-preset-env": "6.7.0"
+    "postcss-preset-env": "6.7.0",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
   }
 }
