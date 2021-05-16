@@ -15,7 +15,7 @@
     "dist"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "yarn build",
     "test": "../../scripts/test.sh",
     "build": "../../scripts/build.sh",
     "lint": "../../scripts/lint.sh"
