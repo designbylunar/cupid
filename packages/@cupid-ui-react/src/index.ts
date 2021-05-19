@@ -1,4 +1,4 @@
-import '@ui-framework/css/ui-framework.css'
+import 'cupid-ui/ui-framework.css'
 
 export * from './components/layout/card'
 

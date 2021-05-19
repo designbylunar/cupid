@@ -1,12 +1,12 @@
 {
-  "name": "@ui-framework/react",
+  "name": "@cupid-ui/react",
   "version": "0.1.0",
   "description": "A modern framework for building responsive frontends.",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/designbylunar/ui-framework.git",
-    "directory": "packages/@ui-framework-react"
+    "url": "git+https://github.com/designbylunar/cupid-ui.git",
+    "directory": "packages/@cupid-ui-react"
   },
   "author": "The Lunar Design Team <npm@lunardesing.org>",
   "license": "MIT",

@@ -1,0 +1,12 @@
+.switch {
+    background: var(--ui-secondary);
+}
+
+.switch > input {
+    padding-right: 1rem;
+}
+
+.switch > input[disabled], input[disabled] ~ * {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
