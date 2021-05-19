@@ -1,7 +1,12 @@
 {
-  "name": "cupid-ui-mono",
+  "name": "cupid-ui",
   "version": "0.1.0",
   "description": "A modern framework for building responive frontends",
+  "main": "dist/cupid-ui.css",
+  "files": [
+    "README.md",
+    "dist"
+  ],
   "keywords": [
     "css",
     "design",
@@ -27,12 +32,23 @@
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
   "scripts": {
-    "build": "yarn workspaces run build"
+    "prepublishOnly": "yarn build",
+    "build": "postcss src/cupid-ui.css -o dist/cupid-ui.css",
+    "watch": "postcss src/cupid-ui.css -o dist/cupid-ui.css --watch",
+    "dev": "npm run build; npm run watch"
   },
   "private": true,
   "devDependencies": {
+    "autoprefixer": "10.1.0",
+    "cssnano": "4.1.10",
     "husky": "6.0.0",
     "lint-staged": "11.0.0",
+    "postcss": "8.2.10",
+    "postcss-cli": "8.3.1",
+    "postcss-each": "1.0.0",
+    "postcss-import": "14.0.2",
+    "postcss-nested": "5.0.5",
+    "postcss-preset-env": "6.7.0",
     "tslib": "2.2.0",
     "typescript": "4.2.4"
   }
