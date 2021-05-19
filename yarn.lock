@@ -28,6 +28,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@cupid-ui/css@https://github.com/designbylunar/cupid-ui":
+  version "0.1.0"
+  resolved "https://github.com/designbylunar/cupid-ui#71cd4e12280fff777f760ad20071652e41f52b13"
+
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.4.tgz#d4b3549a5db5de2683e0c1071ab4f140904bbf69"
@@ -593,10 +597,6 @@ csstype@^3.0.2:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
   integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
-
-"cupid-ui@https://github.com/designbylunar/cupid-ui":
-  version "0.1.0"
-  resolved "https://github.com/designbylunar/cupid-ui#eb6b64387ec794fc0bb5cee6090eaa1c7125c34e"
 
 debug@^4.3.1:
   version "4.3.1"
