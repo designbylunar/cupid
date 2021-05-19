@@ -17,12 +17,13 @@
       "jsx": "preserve",
       "esModuleInterop": true,
       "target": "es5",
-      "allowJs": true,
+      "allowJs": false,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "noEmit": true,
       "resolveJsonModule": true,
-      "isolatedModules": true
+      "isolatedModules": true,
+      "outDir": "dist"
     },
     "exclude": ["node_modules"]
   }
