@@ -8,7 +8,7 @@
     "url": "git+https://github.com/designbylunar/cupid-ui.git",
     "directory": "packages/@cupid-ui-react"
   },
-  "author": "The Lunar Design Team <npm@lunardesing.org>",
+  "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
   "files": [
     "README.md",
