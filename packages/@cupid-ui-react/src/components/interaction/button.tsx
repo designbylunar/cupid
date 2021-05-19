@@ -1,4 +1,6 @@
 import '../globals.css'
+import React from 'react'
+
 interface ButtonType {
     title: string,
     link?: string
