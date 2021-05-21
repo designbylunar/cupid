@@ -1,4 +1,3 @@
-import '../globals.css'
 import React from 'react'
 
 interface ButtonType {
@@ -6,7 +5,7 @@ interface ButtonType {
     link?: string
 }
 
-export default function Button({
+export function Button({
     title,
     link
 } : ButtonType) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../interaction/button'
+import { Button } from '../interaction/button'
 import './card.css'
 
 interface Typings {
@@ -18,7 +18,7 @@ interface WithButton extends Typings {
 
 type CardType = (Typings & WithButton) | Typings
 
-export default function Card({
+export function Card({
     title,
     image,
     subtitle,
