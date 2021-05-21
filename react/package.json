@@ -9,6 +9,10 @@
     "url": "git+https://github.com/designbylunar/cupid-ui.git",
     "directory": "packages/react"
   },
+  "files": [
+    "README.md",
+    "dist"
+  ],
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "tsc -b tsconfig.build.json",
@@ -20,12 +24,16 @@
     "access": "public"
   },
   "peerDependenciesMeta": {
-    "react": { "optional": true },
-    "preact": { "optional": true }
+    "react": {
+      "optional": true
+    },
+    "preact": {
+      "optional": true
+    }
   },
   "peerDependencies": {
-    "react": "^17.0.0",
-    "preact": "^10.0.0"
+    "preact": "^10.0.0",
+    "react": "^17.0.0"
   },
   "devDependencies": {
     "@types/react": "17.0.6",
@@ -34,6 +42,6 @@
     "react-dom": "17.0.2"
   },
   "dependencies": {
-    "@cupid-ui/css": "https://github.com/designbylunar/cupid-ui"
+    "@cupid-ui/css": "^0.0.1"
   }
 }

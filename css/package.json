@@ -1,6 +1,6 @@
 {
   "name": "@cupid-ui/css",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A modern framework for building responsive frontends.",
   "main": "dist/cupid-ui.css",
   "repository": {
