@@ -1,39 +1,28 @@
 {
   "name": "cupid-ui",
   "version": "0.1.0",
-  "description": "A modern framework for building responive frontends",
-  "keywords": [
-    "css",
-    "design",
-    "postcss",
-    "modern",
-    "ui",
-    "framework"
-  ],
-  "workspaces": [
-    "packages/*"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "tsdx lint"
-  },
-  "homepage": "https://lunardesign.org/projects/cupid-ui",
-  "repository": "https://github.com/designbylunar/cupid-ui.git",
-  "bugs": "https://github.com/designbylunar/cupid-ui/issues/new",
+  "private": true,
+  "workspaces": ["css", "react"],
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
-  "scripts": {
-    "build": "yarn workspaces run build"
-  },
-  "private": true,
   "devDependencies": {
     "husky": "6.0.0",
     "lint-staged": "11.0.0",
     "tslib": "2.2.0",
     "typescript": "4.2.4"
+  },
+  "scripts": {
+    "playground": "",
+
+    "docs:build": "",
+    "docs:watch": "",
+
+    "build:css": "yarn workspace css build",
+    "build:react": "yarn workspace react build",
+
+    "test:css": "yarn workspace css test",
+    "test:react": "yarn workspace react test",
+    "test:all": "yarn run test:css && yarn run test:react",
+    "test": "yarn run test:all"
   }
 }
