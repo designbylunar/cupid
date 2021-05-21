@@ -16,6 +16,9 @@
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependenciesMeta": {
     "react": { "optional": true },
     "preact": { "optional": true }

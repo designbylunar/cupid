@@ -20,6 +20,9 @@
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "autoprefixer": "10.1.0",
     "cssnano": "4.1.10",
