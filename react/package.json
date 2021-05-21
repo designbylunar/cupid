@@ -1,32 +1,28 @@
 {
   "name": "@cupid-ui/react",
   "version": "0.1.0",
-  "description": "A modern framework for building responsive frontends.",
+  "description": "A modern framework for building responsive frontends in React.",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/designbylunar/cupid-ui.git",
-    "directory": "packages/@cupid-ui-react"
+    "directory": "packages/react"
+  },
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "build": "tsc -b tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
-  "files": [
-    "README.md",
-    "dist"
-  ],
-  "scripts": {
-    "prepublishOnly": "yarn build",
-    "test": "jest --coverage",
-    "build": "tsc -b tsconfig.build.json",
-    "clean": "tsc -b tsconfig.build.json --clean",
-    "lint": "../../scripts/lint.sh",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
-  },
-  "publishConfig": {
-    "access": "public"
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "preact": { "optional": true }
   },
   "peerDependencies": {
-    "react": ">=17"
+    "react": "^17.0.0",
+    "preact": "^3.0.0"
   },
   "devDependencies": {
     "@types/react": "17.0.6",

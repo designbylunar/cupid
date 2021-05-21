@@ -1,12 +1,12 @@
 {
   "name": "@cupid-ui/css",
   "version": "0.1.0",
-  "description": "A modern framework for buliding responsive frontends.",
+  "description": "A modern framework for building responsive frontends.",
   "main": "dist/cupid-ui.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/designbylunar/cupid-ui.git",
-    "directory": "packages/cupid-ui"
+    "directory": "packages/css"
   },
   "files": [
     "README.md",
