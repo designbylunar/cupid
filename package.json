@@ -17,11 +17,12 @@
     "docs:build": "",
     "docs:watch": "",
 
-    "build:css": "yarn workspace css build",
-    "build:react": "yarn workspace react build",
+    "build:css": "yarn workspace @cupid-ui/css build",
+    "build:react": "yarn workspace @cupid-ui/react build",
+    "build:all": "yarn build:css && yarn build:react",
 
-    "test:css": "yarn workspace css test",
-    "test:react": "yarn workspace react test",
+    "test:css": "yarn workspace @cupid-ui/css test",
+    "test:react": "yarn workspace @cupid-ui/react test",
     "test:all": "yarn run test:css && yarn run test:react",
     "test": "yarn run test:all"
   }
