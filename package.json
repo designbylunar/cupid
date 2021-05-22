@@ -2,23 +2,24 @@
   "name": "cupid-ui",
   "version": "0.1.0",
   "private": true,
-  "workspaces": ["css", "react"],
+  "workspaces": [
+    "css",
+    "react"
+  ],
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
   "devDependencies": {
+    "tsdx": "0.14.1",
     "tslib": "2.2.0",
     "typescript": "4.2.4"
   },
   "scripts": {
     "playground": "",
-
     "docs:build": "",
     "docs:watch": "",
-
     "build:css": "yarn workspace @cupid-ui/css build",
     "build:react": "yarn workspace @cupid-ui/react build",
     "build:all": "yarn build:css && yarn build:react",
-
     "test:css": "yarn workspace @cupid-ui/css test",
     "test:react": "yarn workspace @cupid-ui/react test",
     "test:all": "yarn run test:css && yarn run test:react",

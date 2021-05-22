@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "prepublishOnly": "yarn build",
-    "build": "tsc -b tsconfig.build.json && tsc -b tsconfig-cjs.json",
+    "build": "tsdx build --name cupid-ui --format cjs,esm,umd --tsconfig ./tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
