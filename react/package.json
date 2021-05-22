@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "A modern framework for building responsive frontends in React.",
   "main": "dist/index.js",
+  "module": "dist/cjs/index.js",
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
   ],
   "scripts": {
     "prepublishOnly": "yarn build",
-    "build": "tsc -b tsconfig.build.json",
+    "build": "tsc -b tsconfig.build.json && tsc -b tsconfig-cjs.json",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
@@ -36,6 +37,7 @@
     "react": "^17.0.0"
   },
   "devDependencies": {
+    "@types/node": "^15.6.0",
     "@types/react": "17.0.6",
     "@types/react-dom": "17.0.5",
     "react": "17.0.2",
