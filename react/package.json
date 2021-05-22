@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "A modern framework for building responsive frontends in React.",
   "main": "dist/index.js",
-  "module": "dist/cjs/index.js",
+  "module": "dist/cupid-ui.esm.js",
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
