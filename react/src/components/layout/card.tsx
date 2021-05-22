@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from '../interaction/button'
-import './card.css'
 
 interface Typings {
     title: string,
