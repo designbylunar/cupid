@@ -17,6 +17,13 @@
   color: white;
 }
 
+.button[disabled],
+.button[aria-disabled=true],
+.button[disabled]:hover,
+.button[aria-disabled=true]:hover {
+  background: var(--ui-primary-disabled);
+}
+
 @media (prefers-color-scheme: 'dark') {
   .button.mono {
     background: white;
