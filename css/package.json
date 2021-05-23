@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A modern framework for building responsive frontends.",
   "main": "dist/cupid-ui.css",
+  "style": "dist/cupid-ui.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/designbylunar/cupid-ui.git",
