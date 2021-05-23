@@ -1,5 +1,3 @@
-import '@cupid-ui/css/ui-framework.css'
-
 export * from './components/interaction/button'
 export * from './components/layout/card'
 
