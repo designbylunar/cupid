@@ -8,4 +8,9 @@
     --ui-error: #FF636E;
     --ui-warning: #ECD444;
     --ui-info: #00C6E0;
+
+    --ui-mono-bg-hover: #525252;
+    --ui-mono-bg-hover-dark: #dddddd;
+    --ui-mono-bg-disabled: #303030;
+    --ui-mono-bg-disabled-dark: #eeeeee;
 }

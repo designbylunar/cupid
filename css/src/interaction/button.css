@@ -30,18 +30,30 @@
   background: black;
   color: white;
 }
+.button.mono:hover {
+  background: var(--ui-mono-bg-hover);
+}
 
-.button[disabled],
-.button[aria-disabled=true],
-.button[disabled]:hover,
-.button[aria-disabled=true]:hover {
-  background: var(--ui-primary-disabled);
+.button.mono[disabled],
+.button.mono[aria-disabled=true],
+.button.mono[disabled]:hover,
+.button.mono[aria-disabled=true]:hover {
+  background: var(--ui-mono-bg-disabled);
 }
 
 @media (prefers-color-scheme: 'dark') {
   .button.mono {
     background: white;
     color: black;
+  }
+  .button.mono:hover {
+    background: var(--ui-mono-bg-hover-dark);
+  }
+  .button.mono[disabled],
+  .button.mono[aria-disabled=true],
+  .button.mono[disabled]:hover,
+  .button.mono[aria-disabled=true]:hover {
+    background: var(--ui-mono-bg-disabled-dark);
   }
 }
 
