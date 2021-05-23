@@ -57,6 +57,13 @@
   }
 }
 
+.button[disabled],
+.button[aria-disabled=true],
+.button[disabled]:hover,
+.button[aria-disabled=true]:hover {
+  background: var(--ui-primary-disabled);
+}
+
 .button:hover,
 .button:focus {
     background: var(--ui-primary-hover);
