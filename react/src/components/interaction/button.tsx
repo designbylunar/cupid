@@ -10,12 +10,12 @@ export function Button({
     link
 } : ButtonType) {
     if (link) return (
-        <a href={link} title={title} className=".button">
+        <a href={link} title={title} className="button">
             {title}
         </a>
     )
     return (
-        <a title={title} className=".button">
+        <a title={title} className="button">
             {title}
         </a>
     )
