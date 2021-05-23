@@ -11,6 +11,18 @@
     text-align: center;
 }
 
+.button.mono {
+  background: black;
+  color: white;
+}
+
+@media (prefers-color-scheme: 'dark') {
+  .button.mono {
+    background: white;
+    color: black;
+  }
+}
+
 .button:hover,
 .button:focus {
     background: var(--ui-primary-hover);
