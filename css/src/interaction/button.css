@@ -24,6 +24,7 @@
                          backdrop-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
+    max-width: 100%;
 }
 
 .button.mono {
