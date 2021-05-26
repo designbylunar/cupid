@@ -1,9 +1,6 @@
-import { h, render } from 'preact'
-import App from './app'
+import { render } from 'preact'
+import App from './App'
 
-render(
-		<div>
-      <App />
-		</div>,
-    document.body
-);
+const root = document.getElementById('root')
+
+render(<App />, root)

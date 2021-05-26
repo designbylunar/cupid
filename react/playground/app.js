@@ -1,5 +1,3 @@
-import { h } from 'preact'
-
 import {Card, Button} from '../src/index'
 
 import './style.css'
