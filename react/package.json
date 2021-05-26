@@ -18,7 +18,6 @@
     "prepublishOnly": "yarn build",
     "build": "tsdx build --name cupid-ui --format cjs,esm,umd --tsconfig ./tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "dev": "parcel watch playground/index.html",
     "playground": "parcel playground/index.html"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
