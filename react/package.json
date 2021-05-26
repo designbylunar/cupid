@@ -45,8 +45,9 @@
     "@types/node": "15.6.0",
     "@types/react": "17.0.8",
     "@types/react-dom": "17.0.5",
+    "parcel": "2.0.0-nightly.688",
+    "parcel-bundler": "1.12.5",
     "preact": "10.5.13",
-    "preact-cli": "3.2.0",
     "preact-render-to-string": "5.1.19",
     "react": "17.0.2",
     "react-dom": "17.0.2"
