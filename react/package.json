@@ -17,7 +17,8 @@
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "tsdx build --name cupid-ui --format cjs,esm,umd --tsconfig ./tsconfig.build.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "playground": "preact watch --src playground/ --esm true"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
@@ -37,12 +38,14 @@
     "react": "^17.0.0"
   },
   "dependencies": {
-    "@cupid-ui/css": "^0.0.3"
+    "@cupid-ui/css": "0.0.3"
   },
   "devDependencies": {
     "@types/node": "15.6.0",
     "@types/react": "17.0.8",
     "@types/react-dom": "17.0.5",
+    "preact": "10.1.0",
+    "preact-cli": "3.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   }
