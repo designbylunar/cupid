@@ -11,11 +11,13 @@ interface Typings {
     imageDesc?: string,
     
     buttonText?: string,
+    buttonType?: string,
     buttonLink?: string
 }
 
 interface WithButton extends Typings {
     buttonText: string,
+    buttonType?: string,
     buttonLink?: string
 }
 
@@ -32,11 +34,27 @@ type CardType = (Typings & WithButton) |
                 (Typings & WithButton & WithImage) |
                 Typings
 
+/**
+ * Creates a card element
+ * @param title The main text of the card (eg. the name of a project or person)
+ * @param subtitle The text below the title. (eg. blurb about project or a person's role at a company)
+ * @param buttonText The text displayed on the button
+ * @param buttonLink The link the button goes to
+ * @param buttonType The type associated with the button
+ * @param image The image that appears on the card
+ * @param imageWidth The width of the image aforementioned. This must be defined to prevent layout shift.
+ * @param imageHeight The height of the image aforementioned. This must be defined to prevent layout shift.
+ * @param imageDesc A short description of what's in the image  
+ * @returns 
+ */
+
 export function Card({
     title,
     subtitle,
+
     buttonText,
     buttonLink,
+    buttonType,
 
     image,
     imageWidth,
@@ -56,15 +74,11 @@ export function Card({
             <div className="text">
                 <h2>{title}</h2>
                 <p>{subtitle}</p>
-                {buttonLink && buttonText && (
-                    <Button
-                        title={buttonText}
-                        link={buttonLink}
-                    />
-                )}
                 {buttonText && (
                     <Button
                         title={buttonText}
+                        link={buttonLink ? buttonLink : "#"}
+                        type={buttonType ? buttonType : ""}
                     />
                 )}
             </div>
