@@ -3,11 +3,15 @@ import { Button } from '../interaction/button'
 
 interface Typings {
     title: string,
-    image?: string,
     subtitle: string,
-    // TODO: replace `any` with proper typings
-    buttonText?: any,
-    buttonLink?: any
+
+    image?: string,
+    imageWidth?: string,
+    imageHeight?: string,
+    imageDesc?: string,
+    
+    buttonText?: string,
+    buttonLink?: string
 }
 
 interface WithButton extends Typings {
@@ -15,14 +19,29 @@ interface WithButton extends Typings {
     buttonLink?: string
 }
 
-type CardType = (Typings & WithButton) | Typings
+interface WithImage extends Typings {
+  image: string,
+  imageWidth: string,
+  imageHeight: string,
+  imageDesc: string
+}
+
+// TODO: Find proper way to do the following (L25-28)
+type CardType = (Typings & WithButton) |
+                (Typings & WithImage) |
+                (Typings & WithButton & WithImage) |
+                Typings
 
 export function Card({
     title,
-    image,
     subtitle,
     buttonText,
-    buttonLink
+    buttonLink,
+
+    image,
+    imageWidth,
+    imageHeight,
+    imageDesc
 } : CardType) {
     return (
         <div className="card">
