@@ -10,6 +10,12 @@
   margin: 1em 1em;
 }
 
+.card > img {
+  border-radius: 0.75rem 0.75rem 0 0;
+  max-width: 100%;
+  width: 100%;
+}
+
 @media (min-width: 576px) {
     .card > img { border-radius: 0.75rem 0 0 0.75rem; }
     .card > h2 { font-size: 1.75rem; }
@@ -20,11 +26,6 @@
     .card.text { color: white; }
 }
 
-.card > img {
-  border-radius: 0.75rem 0.75rem 0 0;
-  max-width: 100%;
-  width: 100%;
-}
 
 .card > text > h2,
 .card > text > p {
