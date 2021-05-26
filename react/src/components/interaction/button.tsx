@@ -10,6 +10,13 @@ const ButtonTypes = [
   "mono"
 ]
 
+/**
+ * Creates a button element
+ * @param title The text displayed on the button
+ * @param link The link the button goes to
+ * @param type The type of button you want. You can use this optional type to change it to a documented theme such as "mono"
+ * @returns button element
+ */
 export function Button({
     title,
     link,
