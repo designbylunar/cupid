@@ -22,7 +22,7 @@ export function Button({
     link,
     type
 } : ButtonType) {
-  if (type !== undefined)
+  if (type !== undefined && type !== "")
     if (ButtonTypes.includes(type) === false)
       throw Error("Invalid \"type\" property provided to Cupid UI's Button component. More information may follow.")
 
