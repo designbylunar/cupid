@@ -18,7 +18,7 @@
     "prepublishOnly": "yarn build",
     "build": "tsdx build --name cupid-ui --format cjs,esm,umd --tsconfig ./tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "playground": "preact build --src playground/ --out playgroundBuild/ && http-server playgroundBuild/ -b -c-1"
+    "playground": "preact build --src playground/ --dest playgroundBuild/ --esm false --sw false --prerender false && http-server playgroundBuild/ -b -c-1"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
