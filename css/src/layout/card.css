@@ -1,5 +1,5 @@
 .card {
-    background: var(--ui-secondary); /* TODO: Find background for light theme */
+    background: var(--ui-nqb); /* TODO: Find background for light theme */
     border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
