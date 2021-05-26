@@ -1,6 +1,6 @@
 {
   "name": "@cupid-ui/react",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A modern framework for building responsive frontends in React.",
   "main": "dist/index.js",
   "module": "dist/cupid-ui.esm.js",
