@@ -29,7 +29,9 @@
     margin-right: .25rem;
   }
   .card > h2 { font-size: 1.75rem; }
-  .card > .text { margin: 1rem 1rem; }
+  .card > .text > .button {
+    margin-left: 0;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
