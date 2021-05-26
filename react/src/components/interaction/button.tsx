@@ -26,14 +26,14 @@ export function Button({
     if (ButtonTypes.includes(type) === false)
       throw Error("Invalid \"type\" property provided to Cupid UI's Button component. More information may follow.")
 
-    if (link) return (
-        <a href={link} title={title} className={type ? `button.${type}` : "button"}>
-            {title}
-        </a>
-    )
-    return (
-        <a title={title} className="button">
-            {title}
-        </a>
-    )
+  if (link) return (
+    <a href={link} title={title} className={type ? `button.${type}` : "button"}>
+      {title}
+    </a>
+  )
+  return (
+    <a title={title} className={type ? `button.${type}` : "button"}>
+        {title}
+    </a>
+  )
 }
