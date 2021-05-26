@@ -45,6 +45,14 @@ export function Card({
 } : CardType) {
     return (
         <div className="card">
+            {image && (
+              <img
+                src={image}
+                width={imageWidth}
+                height={imageHeight}
+                alt={imageDesc}
+              />
+            )}
             <div className="text">
                 <h2>{title}</h2>
                 <p>{subtitle}</p>
