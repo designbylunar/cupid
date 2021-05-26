@@ -19,6 +19,7 @@
 @media (min-width: 850px) {
   .card {
     flex-direction: row;
+    max-width: 42rem;
   }
   .card > img {
     border-radius: 0.75rem 0 0 0.75rem;
