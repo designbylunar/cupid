@@ -15,9 +15,8 @@
   ],
   "scripts": {
     "prepublishOnly": "yarn build",
-    "build": "postcss src/cupid-ui.css -o dist/cupid-ui.css",
-    "watch": "postcss src/cupid-ui.css -o dist/cupid-ui.css --watch",
-    "playground": "http-server -b",
+    "build": "postcss src/cupid-ui.css -o dist/cupid-ui.css --verbose",
+    "watch": "postcss src/cupid-ui.css -o dist/cupid-ui.css --watch --verbose",
     "dev": "npm-run-all -p watch playground"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
