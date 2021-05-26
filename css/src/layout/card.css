@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 850px) {
   .card {
     flex-direction: row;
   }
