@@ -45,10 +45,9 @@ export function Card({
 } : CardType) {
     return (
         <div className="card">
-            <img src={image} className="card.image" />
-            <div className="card.text">
-                <h2 className="card.title">{title}</h2>
-                <p className="card.subtitle">{subtitle}</p>
+            <div className="text">
+                <h2>{title}</h2>
+                <p>{subtitle}</p>
                 {buttonLink && buttonText && (
                     <Button
                         title={buttonText}
