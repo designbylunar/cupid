@@ -17,8 +17,18 @@
 }
 
 @media (min-width: 576px) {
-    .card > img { border-radius: 0.75rem 0 0 0.75rem; }
-    .card > h2 { font-size: 1.75rem; }
+  .card {
+    flex-direction: row;
+  }
+  .card > img {
+    border-radius: 0.75rem 0 0 0.75rem;
+    max-width: auto;
+    width: auto;
+    max-height: 75%;
+    height: 75%;
+  }
+  .card > h2 { font-size: 1.75rem; }
+  .card > .text { margin: 1rem 1rem; }
 }
 
 @media (prefers-color-scheme: dark) {
