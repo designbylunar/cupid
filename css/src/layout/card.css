@@ -21,9 +21,9 @@
     .card > h2 { font-size: 1.75rem; }
 }
 
-@media (prefers-color-scheme: 'dark') {
-    .card { background: var(--ui-secondary); }
-    .card.text { color: white; }
+@media (prefers-color-scheme: dark) {
+  .card { background: var(--ui-nqw); }
+  .card > .text { color: black; }
 }
 
 
