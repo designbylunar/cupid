@@ -10,7 +10,7 @@ We have three versions of Cupid UI:
 **If you only need the CSS,** you can use the [`@cupid-ui/css`](https://npmjs.com/package/@cupid-ui/css) repo.
 
 # Usage
-You can access all the documentation for UI Framework [online](https://designbylunar.github.io/cupid-ui) or via the `docs/` folder.
+You can access all the documentation for Cupid [online](https://designbylunar.github.io/cupid-ui) or via the `docs/` folder.
 
 ### Fonts
 We recommend using the [Inter](https://rsms.me/inter) fontface by [Rasmus Andersson](https://rsms.me). We use this font while creating every component, but left it unpackaged to make our library much smaller. You can either link to it (`<link rel="stylesheet" media="all" href="https://rsms.me/inter/inter.css" type="text/css">`) or use the [`inter-ui` package on npm.](https://www.npmjs.com/package/inter-ui). The font order of the package is as follows: `Inter var experimental, Inter var, Inter, sans-serif`.
