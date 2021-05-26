@@ -19,4 +19,4 @@ We recommend using the [Inter](https://rsms.me/inter) fontface by [Rasmus Anders
 The colours we use are [WCAG AAA compliant](https://webaim.org/articles/contrast/), to help us follow through on one of the three pillars for this framework: accessibility. When using classes to have your own colour scheme, please try to maintain this same contrast to allow people to use your site to the fullest.
 
 ## Acknowledgements
-This framework was designed and developed by the Lunar Design team, with most of the desings done by [Jack Merrill](https://github.com/jackmerrill) and most of the development by [Matt Ronchetto](https://github.com/doamatto). It is licensed under MIT license which you can find in the root of this repository, inside of the `LICENSE` file.
+This framework was designed and developed by the Lunar Design team, with most of the designs done by [Jack Merrill](https://github.com/jackmerrill) and most of the development by [Matt Ronchetto](https://github.com/doamatto). It is licensed under MIT license which you can find in the root of this repository, inside of the `LICENSE` file.
