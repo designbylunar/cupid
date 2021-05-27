@@ -19,12 +19,12 @@ export function Button({
     type
 } : ButtonType) {
   if (link) return (
-    <a href={link} title={title} className={type ? `button.${type}` : "button"}>
+    <a href={link} title={title} className={type ? `button ${type}` : "button"}>
       {title}
     </a>
   )
   return (
-    <a title={title} className={type ? `button.${type}` : "button"}>
+    <a title={title} className={type ? `button ${type}` : "button"}>
         {title}
     </a>
   )
