@@ -41,3 +41,6 @@ export default function App() {
 		</div>
 	);
 }
+
+const mountNode = document.getElementById('root');
+ReactDOM.render(<App />, mountNode);
