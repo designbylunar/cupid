@@ -7,7 +7,7 @@ h1 {
 	text-align: center;
 }
 
-@media (prefers-color-scheme: 'dark') {
+@media (prefers-color-scheme: dark) {
   body {
     background: black;
     color: white;
