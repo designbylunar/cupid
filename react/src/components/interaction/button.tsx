@@ -3,6 +3,7 @@ import React from 'react'
 interface ButtonType {
     title: string,
     link?: string,
+    type?: "mono" | "error" | "success" | "warning" | "info",
     disabled?: boolean,
 }
 
@@ -10,7 +11,7 @@ interface ButtonType {
  * Creates a button element
  * @param title The text displayed on the button
  * @param link The link the button goes to
- * @param {("mono")} type The type of button you want. You can use this optional type to change it to a documented theme such as "mono"
+ * @param {("mono" | "error" | "success" | "warning" | "info")} type The type of button you want. You can use this optional type to change it to a documented theme such as "mono"
  * @returns
  */
 export function Button({
