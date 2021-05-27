@@ -1,0 +1,13 @@
+.alert {
+  padding: .75rem .5rem;
+  padding-left: 1rem;
+  text-align: left;
+  margin: 1rem 1rem;
+  color: black;
+  border-radius: 0.25rem;
+}
+
+.alert.success { background: var(--ui-success); }
+.alert.error { background: var(--ui-error); }
+.alert.warning { background: var(--ui-warning); }
+.alert.info { background: var(--ui-info); }

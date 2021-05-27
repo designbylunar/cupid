@@ -3,18 +3,14 @@ import React from 'react'
 interface ButtonType {
     title: string,
     link?: string,
-    type?: string
+    type?: "mono"
 }
-
-const ButtonTypes = [
-  "mono"
-]
 
 /**
  * Creates a button element
  * @param title The text displayed on the button
  * @param link The link the button goes to
- * @param type The type of button you want. You can use this optional type to change it to a documented theme such as "mono"
+ * @param {("mono")} type The type of button you want. You can use this optional type to change it to a documented theme such as "mono"
  * @returns button element
  */
 export function Button({
@@ -22,10 +18,6 @@ export function Button({
     link,
     type
 } : ButtonType) {
-  if (type !== undefined && type !== "")
-    if (ButtonTypes.includes(type) === false)
-      throw Error("Invalid \"type\" property provided to Cupid UI's Button component. More information may follow.")
-
   if (link) return (
     <a href={link} title={title} className={type ? `button.${type}` : "button"}>
       {title}
