@@ -4,6 +4,7 @@ import { Button } from '../interaction/button'
 interface Typings {
     title: string,
     subtitle: string,
+    reverse?: boolean,
 
     image?: string,
     imageWidth?: string,
@@ -52,6 +53,7 @@ type CardType = (Typings & WithButton) |
 export function Card({
     title,
     subtitle,
+    reverse,
 
     buttonText,
     buttonLink,
@@ -62,27 +64,51 @@ export function Card({
     imageHeight,
     imageDesc
 } : CardType) {
-    return (
-        <div className="card">
-            {image && (
-              <img
-                src={image}
-                width={imageWidth}
-                height={imageHeight}
-                alt={imageDesc}
+  // TODO: Find easier way to reverse cards
+  if (reverse) return (
+    <div className="card">
+      <div className="text">
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
+          {buttonText && (
+              <Button
+                  title={buttonText}
+                  link={buttonLink ? buttonLink : "#"}
+                  type={buttonType}
               />
-            )}
-            <div className="text">
-                <h2>{title}</h2>
-                <p>{subtitle}</p>
-                {buttonText && (
-                    <Button
-                        title={buttonText}
-                        link={buttonLink ? buttonLink : "#"}
-                        type={buttonType}
-                    />
-                )}
-            </div>
+          )}
+      </div>
+      {image && (
+        <img
+          src={image}
+          width={imageWidth}
+          height={imageHeight}
+          alt={imageDesc}
+        />
+      )}
+    </div>
+  )
+  return (
+    <div className="card">
+      {image && (
+        <img
+          src={image}
+          width={imageWidth}
+          height={imageHeight}
+          alt={imageDesc}
+        />
+      )}
+      <div className="text">
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
+        {buttonText && (
+          <Button
+              title={buttonText}
+              link={buttonLink ? buttonLink : "#"}
+              type={buttonType}
+          />
+        )}
         </div>
-    )
+    </div>
+  )
 }
