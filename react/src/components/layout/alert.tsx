@@ -1,3 +1,5 @@
+import React from 'react'
+
 interface Typings {
   title?: string,
   text: string,
