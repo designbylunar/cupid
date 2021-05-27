@@ -2,8 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import './style.css'
-import '../../node_modules/@cupid-ui/css/dist/cupid-ui.css'
+import '../../css/dist/cupid-ui.css'
 import {Card, Button} from '../src/index'
+
+import placeholder from 'url:./placeholder.jpg?as=webp'
 
 class Page extends React.Component {
   render() {
@@ -14,7 +16,6 @@ class Page extends React.Component {
         <Button 
           title="Blow up the world"
           link="#"
-          type=""
         />
         <h2>Card</h2>
         <Card
@@ -22,7 +23,7 @@ class Page extends React.Component {
           subtitle="Professional chaos causer"
           buttonText="Hire George"
           buttonLink="#"
-          image="placeholder.jpg"
+          image={placeholder}
           imageWidth="128"
           imageHeight="128"
           imageDesc="Picture of George, a professional chaos causer. Yes, he's a goose."
