@@ -12,8 +12,8 @@ interface Typings {
  * @param text This is what the alert says
  * @param {('success'|'warning'|'error'|'info')} type This is the kind of alert. You can use a
  * @returns
- */
-export default function Alert({
+*/
+export function Alert({
   title,
   text,
   type
