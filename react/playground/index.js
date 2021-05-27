@@ -1,4 +1,4 @@
-import {Card, Button} from '../src/index';
+import {Card, Button, Alert} from '../src/index';
 
 import './style.css';
 import '../../node_modules/@cupid-ui/css/dist/cupid-ui.css';
@@ -7,6 +7,20 @@ export default function App() {
 	return (
 		<div>
 			<h1>Hello, World!</h1>
+      <h2>Alerts</h2>
+      <Alert
+        title="Woah!"
+        text="You did something not good, but great!"
+      />
+      <Alert
+        title="Careful, buster."
+        text="No misbehaving!"
+      />
+      <Alert
+        title="Uh oh!"
+        text="George has broken something again."
+      />
+      <Alert text="I just wanted to say you look really cool." />
       <h2>Buttons</h2>
       <Button 
         title="Blow up the world"
