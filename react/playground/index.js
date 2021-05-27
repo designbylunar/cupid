@@ -46,8 +46,4 @@ export default function App() {
 }
 
 const mountNode = document.getElementById('root');
-<<<<<<< HEAD
 ReactDOM.render(<App />, mountNode);
-=======
-ReactDOM.render(<Page />, mountNode);
->>>>>>> 05af992f2ca29980eff037510049d87d0c629018
