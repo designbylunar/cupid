@@ -31,14 +31,17 @@
   background: black;
   color: white;
 }
-.button.mono:hover {
+.button.mono:hover,
+.button.mono:focus {
   background: var(--ui-mono-bg-hover);
 }
 
 .button.mono[disabled],
 .button.mono[aria-disabled=true],
 .button.mono[disabled]:hover,
-.button.mono[aria-disabled=true]:hover {
+.button.mono[aria-disabled=true]:hover 
+.button.mono[disabled]:focus,
+.button.mono[aria-disabled=true]:focus{
   background: var(--ui-mono-bg-disabled);
 }
 
@@ -47,13 +50,16 @@
     background: white;
     color: black;
   }
-  .button.mono:hover {
+  .button.mono:hover,
+  .button.mono:focus {
     background: var(--ui-mono-bg-hover-dark);
   }
   .button.mono[disabled],
   .button.mono[aria-disabled=true],
   .button.mono[disabled]:hover,
-  .button.mono[aria-disabled=true]:hover {
+  .button.mono[aria-disabled=true]:hover
+  .button.mono[disabled]:focus,
+  .button.mono[aria-disabled=true]:focus {
     background: var(--ui-mono-bg-disabled-dark);
   }
 }
@@ -61,7 +67,9 @@
 .button[disabled],
 .button[aria-disabled=true],
 .button[disabled]:hover,
-.button[aria-disabled=true]:hover {
+.button[aria-disabled=true]:hover
+.button[disabled]:focus,
+.button[aria-disabled=true]:focus {
   background: var(--ui-primary-disabled);
 }
 
