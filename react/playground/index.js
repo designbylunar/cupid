@@ -15,16 +15,19 @@ export default function App() {
       <Alert
         title="Woah!"
         text="You did something not good, but great!"
+        type="success"
       />
       <Alert
         title="Careful, buster."
         text="No misbehaving!"
+        type="warning"
       />
       <Alert
         title="Uh oh!"
         text="George has broken something again."
+        type="error"
       />
-      <Alert text="I just wanted to say you look really cool." />
+      <Alert text="I just wanted to say you look really cool." type="info" />
       <h2>Buttons</h2>
       <Button
         title="Blow up the world"
