@@ -3,7 +3,7 @@ import React from 'react'
 interface ButtonType {
     title: string,
     link?: string,
-    type?: "mono"
+    disabled?: boolean,
 }
 
 /**
@@ -16,13 +16,21 @@ interface ButtonType {
 export function Button({
     title,
     link,
-    type
+    type,
+    disabled
 } : ButtonType) {
+  if (disabled) return (
+    <p title={title} className={type ? `button ${type}` : "button"} aria-disabled="true">
+      {title}
+    </p>
+  )
+
   if (link) return (
     <a href={link} title={title} className={type ? `button ${type}` : "button"}>
       {title}
     </a>
   )
+
   return (
     <a title={title} className={type ? `button ${type}` : "button"}>
         {title}
