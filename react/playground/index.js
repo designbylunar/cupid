@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './style.css';
 import '../../css/dist/cupid-ui.css';
-import {Card, Button, Alert} from '../src/index';
+import { Card, Button, Alert } from '../src/index';
 
 import placeholder from 'url:./placeholder.jpg?as=webp';
 
