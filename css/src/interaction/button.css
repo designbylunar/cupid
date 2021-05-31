@@ -5,7 +5,7 @@
     text-decoration: none;
     background: var(--ui-primary);
     color: black;
-    padding: 1rem .5rem;
+    padding: .75rem 1rem;
     margin: 1em 1em;
     display: flex;
     flex-direction: column;
