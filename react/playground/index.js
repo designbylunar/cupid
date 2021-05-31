@@ -9,7 +9,10 @@ import placeholder from 'url:./placeholder.jpg?as=webp';
 
 export default function App() {
 	return (
-		<div>
+		<div style={{
+      marginTop: 2 + 'rem',
+      marginBottom: 4 + 'rem'
+    }}>
 			<h1>Hello, World!</h1>
       <h2>Alerts</h2>
       <Alert
