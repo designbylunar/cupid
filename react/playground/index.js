@@ -36,12 +36,7 @@ export default function App() {
       <p>Something brand-spanking new! <Badge type="info" text="New!" /></p>
       <p>To show you the power of Lunar Design.. <Badge text="I made this badge!" /></p>
       <h5>Works with baby headers text! <Badge type="warning" text="George says hi. Run." /></h5>
-      <p>Fuck it, badgeception
-      <Badge>
-        <img src={placeholder} alt="Oh fuck its george" />
-      </Badge>
-      </p>
-
+      
       <h2>Buttons</h2>
       <Button
         title="Blow up the world"
