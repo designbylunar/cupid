@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './style.css';
 import '../../css/dist/cupid-ui.css';
-import { Card, Button, Alert } from '../src/index';
+import { Card, Button, Alert, Modal } from '../src/index';
 
 import placeholder from 'url:./placeholder.jpg?as=webp';
 
@@ -44,6 +44,22 @@ export default function App() {
         imageHeight="128"
         imageDesc="Picture of George, a professional chaos causer. Yes, he's a goose."
       />
+      <h2>Modals</h2>
+      <Modal
+        title="Woah there! Are you sure want to nuke that country?"
+        subtext="In the event of total atomic annihilation, Vault-Tec can't save you, because we'll have to pretend we don't know you."
+      >
+        <Button
+          type="mono"
+          link="#"
+          text="Nevermind"
+        />
+        <Button
+          type="error"
+          link="#"
+          text="Delete that nation."
+        />
+      </Modal>
     </div>
   );
 }

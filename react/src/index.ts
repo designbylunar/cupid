@@ -1,4 +1,5 @@
 export * from './components/interaction/button'
+export * from './components/interaction/modal'
 
 export * from './components/layout/alert'
 export * from './components/layout/card'
