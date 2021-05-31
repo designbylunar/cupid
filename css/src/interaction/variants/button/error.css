@@ -1,0 +1,19 @@
+/* Button error */
+
+.button.error {
+  background: var(--ui-error);
+  color: black;
+}
+.button.error:hover,
+.button.error:focus {
+  background: var(--ui-error-hover);
+}
+.button.error[disabled],
+.button.error[aria-disabled=true],
+.button.error[disabled]:hover,
+.button.error[aria-disabled=true]:hover 
+.button.error[disabled]:focus,
+.button.error[aria-disabled=true]:focus{
+  background: var(--ui-error-disabled);
+}
+

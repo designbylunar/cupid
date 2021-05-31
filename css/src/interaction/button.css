@@ -1,3 +1,5 @@
+@import './variants/button.css'; /* Imports other variants from « ./variants/button/* » */
+
 /* Should be used with <a> */
 .button {
     text-decoration: none;
@@ -25,43 +27,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
     max-width: 100%;
-}
-
-.button.mono {
-  background: black;
-  color: white;
-}
-.button.mono:hover,
-.button.mono:focus {
-  background: var(--ui-mono-bg-hover);
-}
-
-.button.mono[disabled],
-.button.mono[aria-disabled=true],
-.button.mono[disabled]:hover,
-.button.mono[aria-disabled=true]:hover 
-.button.mono[disabled]:focus,
-.button.mono[aria-disabled=true]:focus{
-  background: var(--ui-mono-bg-disabled);
-}
-
-@media (prefers-color-scheme: 'dark') {
-  .button.mono {
-    background: white;
-    color: black;
-  }
-  .button.mono:hover,
-  .button.mono:focus {
-    background: var(--ui-mono-bg-hover-dark);
-  }
-  .button.mono[disabled],
-  .button.mono[aria-disabled=true],
-  .button.mono[disabled]:hover,
-  .button.mono[aria-disabled=true]:hover
-  .button.mono[disabled]:focus,
-  .button.mono[aria-disabled=true]:focus {
-    background: var(--ui-mono-bg-disabled-dark);
-  }
 }
 
 .button[disabled],

@@ -1,0 +1,36 @@
+/* Mono theme */
+
+.button.mono {
+  background: black;
+  color: white;
+}
+.button.mono:hover,
+.button.mono:focus {
+  background: var(--ui-mono-bg-hover);
+}
+.button.mono[disabled],
+.button.mono[aria-disabled=true],
+.button.mono[disabled]:hover,
+.button.mono[aria-disabled=true]:hover 
+.button.mono[disabled]:focus,
+.button.mono[aria-disabled=true]:focus{
+  background: var(--ui-mono-bg-disabled);
+}
+@media (prefers-color-scheme: 'dark') {
+  .button.mono {
+    background: white;
+    color: black;
+  }
+  .button.mono:hover,
+  .button.mono:focus {
+    background: var(--ui-mono-bg-hover-dark);
+  }
+  .button.mono[disabled],
+  .button.mono[aria-disabled=true],
+  .button.mono[disabled]:hover,
+  .button.mono[aria-disabled=true]:hover
+  .button.mono[disabled]:focus,
+  .button.mono[aria-disabled=true]:focus {
+    background: var(--ui-mono-bg-disabled-dark);
+  }
+}
