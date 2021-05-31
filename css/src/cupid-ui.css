@@ -1,7 +1,8 @@
 @import "./vars/_colours.css";
 
-@import "./layout/card.css";
 @import "./layout/alert.css";
+@import "./layout/card.css";
 
-@import "./interaction/switch.css";
 @import "./interaction/button.css";
+@import "./interaction/modal.css";
+@import "./interaction/switch.css";
