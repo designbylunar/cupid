@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './style.css';
 import '../../css/dist/cupid-ui.css';
-import { Card, Button, Alert, Modal } from '../src/index';
+import { Card, Button, Alert, Modal, Badge } from '../src/index';
 
 import placeholder from 'url:./placeholder.jpg?as=webp';
 
@@ -31,11 +31,23 @@ export default function App() {
         type="error"
       />
       <Alert text="I just wanted to say you look really cool." type="info" />
+
+      <h2>Badges</h2>
+      <p>Something brand-spanking new! <Badge type="info" text="New!" /></p>
+      <p>To show you the power of Lunar Design.. <Badge text="I made this badge!" /></p>
+      <h5>Works with baby headers text! <Badge type="warning" text="George says hi. Run." /></h5>
+      <p>Fuck it, badgeception
+      <Badge>
+        <img src={placeholder} alt="Oh fuck its george" />
+      </Badge>
+      </p>
+
       <h2>Buttons</h2>
       <Button
         title="Blow up the world"
         link="#"
       />
+
       <h2>Card</h2>
       <Card
         title="George"
@@ -47,6 +59,7 @@ export default function App() {
         imageHeight="128"
         imageDesc="Picture of George, a professional chaos causer. Yes, he's a goose."
       />
+
       <h2>Modals</h2>
       <Modal
         title="Woah there! Are you sure want to nuke that country?"

@@ -1,6 +1,7 @@
 @import "./vars/_colours.css";
 
 @import "./layout/alert.css";
+@import "./layout/badge.css";
 @import "./layout/card.css";
 
 @import "./interaction/button.css";

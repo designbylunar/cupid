@@ -1,0 +1,20 @@
+.badge {
+  padding: .25rem .75rem;
+  text-align: left;
+  margin: 1rem 1rem;
+  color: black;
+  border-radius: 0.25rem;
+  background: var(--ui-secondary);
+  color: white;
+  font-weight: 700;
+}
+
+.badge.success { background: var(--ui-success); }
+.badge.error { background: var(--ui-error); }
+.badge.warning { background: var(--ui-warning); }
+.badge.info { background: var(--ui-info); }
+
+.badge.success,
+.badge.erorr,
+.badge.warning,
+.badge.info { color: black; }
