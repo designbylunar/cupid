@@ -52,12 +52,12 @@ export default function App() {
         <Button
           type="mono"
           link="#"
-          text="Nevermind"
+          title="Nevermind"
         />
         <Button
           type="error"
           link="#"
-          text="Delete that nation."
+          title="Delete that nation."
         />
       </Modal>
     </div>
