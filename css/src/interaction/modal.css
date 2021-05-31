@@ -1,0 +1,25 @@
+.modal {
+  background: var(--ui-secondary);
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal > .text {
+  margin: auto 1rem;
+}
+
+@media (min-width: 850px) {
+  .modal { max-width: 42rem; }
+  .modal > .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .modal > .buttons > .button {
+    margin: .25rem .5rem;
+  }
+}
