@@ -15,8 +15,8 @@
   ],
   "scripts": {
     "prepublishOnly": "yarn build",
-    "build": "postcss src/cupid-ui.css -o dist/cupid-ui.css --verbose",
-    "watch": "postcss src/cupid-ui.css -o dist/cupid-ui.css --watch --verbose",
+    "build": ".\\node_modules\\.bin\\esbuild --bundle src/cupid-ui.css --outfile=dist/cupid-ui.css --minify --platform=browser --sourcemap --log-level=debug",
+    "watch": ".\\node_modules\\.bin\\esbuild --bundle src/cupid-ui.css --outfile=dist/cupid-ui.css --minify --platform=browser --sourcemap --log-level=debug --watch",
     "playground": "http-server -b -c-1"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
@@ -25,11 +25,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "autoprefixer": "10.2.6",
-    "cssnano": "4.1.10",
-    "http-server": "0.12.3",
-    "postcss": "8.3.0",
-    "postcss-cli": "8.3.1",
-    "postcss-import": "14.0.2"
+    "http-server": "0.12.3"
+  },
+  "dependencies": {
+    "esbuild": "^0.12.9"
   }
 }
