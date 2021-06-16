@@ -17,8 +17,7 @@
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "tsdx build --name cupid-ui --format cjs,esm,umd --tsconfig ./tsconfig.build.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
-    "playground": "parcel playground/index.html"
+    "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",
   "license": "MIT",
@@ -41,16 +40,10 @@
     "@cupid-ui/css": "0.0.3"
   },
   "devDependencies": {
-    "@babel/core": "7.14.6",
-    "@babel/preset-react": "7.14.5",
-    "@parcel/transformer-image": "2.0.0-beta.2",
     "@types/node": "15.6.0",
     "@types/react": "17.0.11",
     "@types/react-dom": "17.0.7",
-    "parcel": "2.0.0-beta.2",
-    "postcss": "8.3.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "sharp": "0.28.3"
+    "react-dom": "17.0.2"
   }
 }
