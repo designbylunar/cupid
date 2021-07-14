@@ -1,0 +1,4 @@
+# Output used for Zola
+out/
+# Default output
+public/ 
