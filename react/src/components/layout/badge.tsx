@@ -6,9 +6,9 @@ interface Typings {
 }
 
 /**
- * Creates an Alert, that can be used with other tools
- * @param text This is what the alert says
- * @param {('success'|'warning'|'error'|'info')} type This is the kind of alert. You can use a
+ * Creates a Badge, that can be used with other components
+ * @param text This is what the badge says.
+ * @param {('success'|'warning'|'error'|'info')} type Sets the type of badge you want.
  * @returns
 */
 export function Badge({
