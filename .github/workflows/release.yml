@@ -1,0 +1,32 @@
+name: "Build for release (CSS)"
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v2.2.0
+      with:
+        - node-version: '16'
+      
+    - name: Fetch dependencies with Yarn
+      run: yarn
+
+    - name: Build the CSS
+      run: yarn run-script build:css
+
+    - name: Upload the CSS to Github Releases
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/cupid-ui.css
+
+    - name: Release to NPM
+      run: npm publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
