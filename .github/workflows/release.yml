@@ -1,4 +1,4 @@
-name: "Build for release (CSS)"
+name: "Build for release"
 on:
   release:
     types: [created]
