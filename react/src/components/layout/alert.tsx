@@ -8,9 +8,9 @@ interface Typings {
 
 /**
  * Creates an Alert, that can be used with other tools
- * @param title This goes before the rest of the text and is in bold. Solid for a quick detail, followed by more elaborate information about the alert
- * @param text This is what the alert says
- * @param {('success'|'warning'|'error'|'info')} type This is the kind of alert. You can use a
+ * @param {string} [title] This goes before the rest of the text and is in bold. Solid for a quick detail, followed by more elaborate information about the alert
+ * @param {string} text This is what the alert says
+ * @param {('success'|'warning'|'error'|'info')} [type] This is the kind of alert. You can use a
  * @returns
 */
 export function Alert({
