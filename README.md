@@ -1,5 +1,5 @@
-# Cupid UI
-A modern framework for building responsive frontends.
+# [Cupid UI](https://designbylunar.github.io/cupid)
+A modern framework for building responsive frontends. [Documentation →](https://designbylunar.github.io/cupid/docs)
 
 ---
 
