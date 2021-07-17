@@ -30,7 +30,31 @@ top = false
 Images can be omitted safely.
 
 ## React Layout
-We're currently re-doing how Cards work in React. Documentation will be added soon, but you can see the implementation [below](#more-info)
+```tsx
+import { Card, Button } from '@cupid-ui/react';
+
+// [...]
+
+<Card
+  title="George"
+  subtitle="Professional chaos causer"
+  image="placeholder.jpg"
+  imageDesc="George the goose"
+>
+  <Button
+    title="Learn more"
+    link="#"
+  />
+</Card>
+```
+
+### Parameters
+- `title`: Must be a `string`. The main text of the card (eg. the name of a project or person)
+- `subtitle`: Must be a `string`. The text below the title. (eg. blurb about project or a person's role at a company)
+- `reverse` (optional): Must be a `boolean`. If true, the order will be flipped (text and then the image). This has no effect if you are not using an image. 
+- `image` (optional): Must be a `string`. The image that appears on the card.
+  - `imageDesc`: Must be a `string`. A short description of what's in the image
+- Children elements: Although not technically passed, you can specify child elements to the `<Card></Card>` (eg. `<Button/>` for the card to be interacted with)
 
 ## Preview
 <div class="card">
