@@ -9,6 +9,8 @@ interface Typings {
     imageWidth?: string,
     imageHeight?: string,
     imageDesc?: string,
+
+    children?: React.ReactChild | React.ReactChild[];
 }
 
 interface WithImage extends Typings {
@@ -30,6 +32,7 @@ type CardType = (Typings & WithImage) | Typings
  * @param {string} imageWidth The width of the image aforementioned. This must be defined to prevent layout shift.
  * @param {string} imageHeight The height of the image aforementioned. This must be defined to prevent layout shift.
  * @param {string} imageDesc A short description of what's in the image
+ * @param children Although not technically passed, you can specify child elements to the <Card></Card> (eg. <Button/> for the card to be interacted with)
  * @returns 
  */
 export function Card({
@@ -40,7 +43,9 @@ export function Card({
     image,
     imageWidth,
     imageHeight,
-    imageDesc
+    imageDesc,
+
+    children
 } : CardType) {
   // TODO: Find easier way to reverse cards
   if (reverse) return (
