@@ -53,13 +53,7 @@ export function Card({
       <div className="text">
           <h2>{title}</h2>
           <p>{subtitle}</p>
-          {buttonText && (
-              <Button
-                  title={buttonText}
-                  link={buttonLink ? buttonLink : "#"}
-                  type={buttonType}
-              />
-          )}
+          {children && ({children})}
       </div>
       {image && (
         <img
@@ -84,13 +78,7 @@ export function Card({
       <div className="text">
         <h2>{title}</h2>
         <p>{subtitle}</p>
-        {buttonText && (
-          <Button
-              title={buttonText}
-              link={buttonLink ? buttonLink : "#"}
-              type={buttonType}
-          />
-        )}
+        {children && ({children})}
         </div>
     </div>
   )
