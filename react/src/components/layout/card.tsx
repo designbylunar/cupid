@@ -39,10 +39,6 @@ export function Card({
     subtitle,
     reverse,
 
-    buttonText,
-    buttonLink,
-    buttonType,
-
     image,
     imageWidth,
     imageHeight,
