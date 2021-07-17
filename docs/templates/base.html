@@ -2,12 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    {% block rss %}
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
-    {% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}"/>
-    <link href="https://unpkg.com/@cupid-ui/css@0.0.4/dist/cupid-ui.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
@@ -38,58 +34,11 @@
     {%- endblock seo -%}
   </head>
   <body>
-    <div class="blm">
-      <a href="https://support.eji.org/give/153413/#!/donation/checkout" title="Support the Equal Justice Initiative">
-        Black Lives Matter. Support&nbsp;the&nbsp;Equal&nbsp;Justice&nbsp;Initiative.
-      </a>
-    </div>
     <nav>
-      <a href="/" id="home">
-        Lunar Design
-      </a>
-      <div>
-        <a href="/#more">
-          Our Mission
-        </a>
-        <a href="/#projects">
-          Our Works
-        </a>
-        <a href="/#us">
-          The Team
-        </a>
-      </div>
     </nav>
     {% block content %}{% endblock %}
     <footer>
-      <div>
-        <img src="/assets/wordmark.svg" alt="Lunar Design" />
-        <p class="text-sm mt-2">
-          &copy; 2021 Lunar Design. All rights reserved.<br/>
-          Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed">the CC BY-SA 4.0,</a> unless mentioned otherwise.<br/>
-          <a href="https://twitter.com/designbylunar">Twitter</a> | <a href="https://github.com/designbylunar">GitHub</a>
-        </p>
-      </div>
-      <div class="links">
-        <div class="grid">
-          <a href="/imprint">
-            Imprint
-          </a>
-          <a href="/privacy">
-            Privacy
-          </a>
-          <a href="/contact" class="underline transition-colors hover:text-brandBlue focus:text-brandBlue focus:no-outline">
-            Contact
-          </a>
-        </div>
-        <div class="grid-bottom pt-1 sm:px-2 sm:pt-0">
-          <a href="#" class="underline transition-colors hover:text-brandBlue focus:text-brandBlue focus:no-outline">
-            Shop
-          </a>
-          <a href="#" class="underline transition-colors hover:text-brandBlue focus:text-brandBlue focus:no-outline">
-            Status
-          </a>
-        </div>
-      </div>
     </footer>
   </body>
+  <script async defer data-website-id="b0494afc-d980-4edb-bd5d-24f47cc133a2" src="https://u.nneko.me/umami.js"></script>
 </html>
