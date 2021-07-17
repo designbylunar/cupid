@@ -10,7 +10,7 @@ interface ButtonType {
 /**
  * Creates a button element
  * @param {string} title The text displayed on the button
- * @param {string} [link] The link the button goes to
+ * @param {string} [link] When the button is clicked, the user is moved to wherever this link is. Incompatible with the « disabled » parameter..
  * @param {("mono" | "error" | "success" | "warning" | "info")} [type] The type of button you want. You can use this optional type to change it to a documented theme such as "mono"
  * @param {boolean} [disabled] If true, the button will be disabled. The « link » parameter will be ignored.
  * @returns
