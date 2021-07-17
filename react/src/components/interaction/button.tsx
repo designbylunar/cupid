@@ -9,9 +9,10 @@ interface ButtonType {
 
 /**
  * Creates a button element
- * @param title The text displayed on the button
- * @param link The link the button goes to
- * @param {("mono" | "error" | "success" | "warning" | "info")} type The type of button you want. You can use this optional type to change it to a documented theme such as "mono"
+ * @param {string} title The text displayed on the button
+ * @param {string} [link] The link the button goes to
+ * @param {("mono" | "error" | "success" | "warning" | "info")} [type] The type of button you want. You can use this optional type to change it to a documented theme such as "mono"
+ * @param {boolean} [disabled] If true, the button will be disabled. The « link » parameter will be ignored.
  * @returns
  */
 export function Button({
