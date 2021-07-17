@@ -6,8 +6,6 @@ interface Typings {
     reverse?: boolean,
 
     image?: string,
-    imageWidth?: string,
-    imageHeight?: string,
     imageDesc?: string,
 
     children?: React.ReactChild | React.ReactChild[];
@@ -15,8 +13,6 @@ interface Typings {
 
 interface WithImage extends Typings {
   image: string,
-  imageWidth: string,
-  imageHeight: string,
   imageDesc: string
 }
 
