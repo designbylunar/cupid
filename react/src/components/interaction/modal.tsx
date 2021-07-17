@@ -8,8 +8,8 @@ interface ModalType {
 
 /**
  * Creates a modal element
- * @param title The main text of the modal (eg. the notice being provided)
- * @param subtext The text below the notice (eg. blurb about what the modal's action will cause)
+ * @param title The main text that appears at the top of the modal. (eg. the notice being provided)
+ * @param subtext The text below the main text that clarifies the title. (eg. blurb about what the modal's action will cause)
  * @param children Although not technically passed, you do need to specify a child element to the <Modal></Modal> (eg. <Button/> for the modal to interact with)
  * @returns 
  */
