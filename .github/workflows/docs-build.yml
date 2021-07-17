@@ -1,5 +1,11 @@
-on: push
-name: Build and deploy docs to GH pages
+name: Deploy docs
+on:
+  push:
+    paths:
+      - 'docs/**'
+  pull_request:
+    paths:
+      - 'docs/**'
 jobs:
   build:
     runs-on: ubuntu-latest
