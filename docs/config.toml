@@ -2,19 +2,14 @@ base_url = "https://designbylunar.github.io/cupid-ui"
 title = "Cupid UI"
 description = "Cupid UI is a modern framework for building responsive frontends."
 
-theme = "docsascode"
-
 default_language = "en"
 
 compile_sass = true
 generate_feed = false
 minify_html = false
 
+[markdown]
 highlight_code = true
 highlight_theme = "kronuz"
-build_search_index = true
 
-taxonomies = [
-    {name = "tags", rss = true},
-    {name = "authors", rss = true},
-]
+build_search_index = true
