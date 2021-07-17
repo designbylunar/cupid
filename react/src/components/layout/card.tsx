@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from '../interaction/button'
 
 interface Typings {
     title: string,
@@ -10,18 +9,6 @@ interface Typings {
     imageWidth?: string,
     imageHeight?: string,
     imageDesc?: string,
-    
-    // TODO: Find way to get typings from <Button/>
-    buttonText?: string,
-    buttonType?: "mono",
-    buttonLink?: string
-}
-
-// TODO: Find way to get typings from <Button/>
-interface WithButton extends Typings {
-    buttonText: string,
-    buttonType?: "mono",
-    buttonLink?: string
 }
 
 interface WithImage extends Typings {
@@ -31,11 +18,8 @@ interface WithImage extends Typings {
   imageDesc: string
 }
 
-// TODO: Find proper way to do the following (L25-28)
-type CardType = (Typings & WithButton) |
-                (Typings & WithImage) |
-                (Typings & WithButton & WithImage) |
-                Typings
+// TODO: Find proper way to do the following
+type CardType = (Typings & WithImage) | Typings
 
 /**
  * Creates a card element
