@@ -13,3 +13,6 @@ highlight_code = true
 highlight_theme = "kronuz"
 
 build_search_index = true
+
+[extra]
+author = "Lunar Design"
