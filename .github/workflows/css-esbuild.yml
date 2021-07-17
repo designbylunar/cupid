@@ -1,0 +1,28 @@
+name: "Test build (CSS)"
+on:
+  push:
+    paths:
+      - 'css/**'
+      - '!css/playground/**'
+  pull_request:
+    paths:
+      - 'css/**'
+      - '!css/playground/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v2.2.0
+      with:
+        - node-version: '16'
+      
+    - name: Fetch dependencies with Yarn
+      run: yarn
+
+    - name: Run a test build
+      run: yarn run-script build:css
