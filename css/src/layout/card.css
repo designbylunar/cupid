@@ -36,6 +36,8 @@
     align-self: left;
     justify-content: center;
     text-align: left;
+    max-width: 100%;
+    width: 100%;
   }
   .card > .text > .button {
     margin-left: 0;
