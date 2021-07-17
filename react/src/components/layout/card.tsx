@@ -48,24 +48,20 @@ export function Card({
           {children && ({children})}
       </div>
       {image && (
-        <img
-          src={image}
-          width={imageWidth}
-          height={imageHeight}
-          alt={imageDesc}
-        />
+        <picture>
+          <source srcset={image} title={imageDesc}/>
+          <img src={image} alt={imageDesc} />
+        </picture>
       )}
     </div>
   )
   return (
     <div className="card">
       {image && (
-        <img
-          src={image}
-          width={imageWidth}
-          height={imageHeight}
-          alt={imageDesc}
-        />
+        <picture>
+          <source srcset={image} title={imageDesc}>
+          <img src={image} alt={imageDesc} />
+        </picture>
       )}
       <div className="text">
         <h2>{title}</h2>
