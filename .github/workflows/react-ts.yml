@@ -24,7 +24,7 @@ jobs:
       run: yarn
 
     - name: Run a test build
-      run: yarn run-script build:react
+      run: yarn run build:react
 
     - name: Check typings
       run: yarn workspace @cupid-ui/react typecheck
