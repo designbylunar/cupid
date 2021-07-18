@@ -19,7 +19,7 @@ jobs:
       run: yarn
 
     - name: Build the CSS
-      run: yarn run-script build:css
+      run: yarn run build:css
 
     - name: Upload the CSS to Github Releases
       uses: softprops/action-gh-release@v1
