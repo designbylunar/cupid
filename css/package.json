@@ -9,6 +9,9 @@
     "url": "git+https://github.com/designbylunar/cupid-ui.git",
     "directory": "packages/css"
   },
+  "bugs": {
+    "url": "https://github.com/designbylunar/cupid/issues"
+  },
   "files": [
     "README.md",
     "dist"
