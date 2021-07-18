@@ -63,6 +63,6 @@ import { 'Button' } from '@cupid-ui/react';
 <a href="#" class="button mono" disabled>Text (coming soon)</a>
 
 ## More info
-- [CSS implementation](https://github.com/designbylunar/cupid-ui/blob/main/css/src/interaction/button.css)
-- [React implementation](https://github.com/designbylunar/cupid-ui/blob/main/react/src/components/interaction/button.tsx)
+- [CSS implementation](https://github.com/designbylunar/cupid/blob/main/css/src/interaction/button.css)
+- [React implementation](https://github.com/designbylunar/cupid/blob/main/react/src/components/interaction/button.tsx)
 

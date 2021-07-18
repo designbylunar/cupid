@@ -12,7 +12,7 @@ sort_by = "date"
     Get started
   </a>
 </div>
-<p>Open-source MIT License. <a href="https://github.com/designbylunar/cupid-ui">GitHub v0.3.0.</a></p>
+<p>Open-source MIT License. <a href="https://github.com/designbylunar/cupid">GitHub v0.3.0.</a></p>
 
 ## ⚡️ Build to be fast
 Whether you use Cupid over-the-air or bundle it locally, Cupid is built to be lightning fast, with or without added minimisations.

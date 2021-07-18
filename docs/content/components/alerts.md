@@ -40,6 +40,6 @@ import { Alert } from '@cupid-ui/react';
 <p class="alert info">I just wanted to say you look really cool.</p>
 
 ## More info
-- [CSS implementation](https://github.com/designbylunar/cupid-ui/blob/main/css/src/layout/alert.css)
-- [React implementation](https://github.com/designbylunar/cupid-ui/blob/main/react/src/components/layout/alert.tsx)
+- [CSS implementation](https://github.com/designbylunar/cupid/blob/main/css/src/layout/alert.css)
+- [React implementation](https://github.com/designbylunar/cupid/blob/main/react/src/components/layout/alert.tsx)
 
