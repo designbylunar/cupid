@@ -68,5 +68,5 @@ import { Modal, Button } from '@cupid-ui/react';
 </div>
 
 ## More info
-- [CSS implementation](https://github.com/designbylunar/cupid-ui/blob/main/css/src/interaction/modal.css)
-- [React implementation](https://github.com/designbylunar/cupid-ui/blob/main/react/src/components/interaction/modal.tsx)
+- [CSS implementation](https://github.com/designbylunar/cupid/blob/main/css/src/interaction/modal.css)
+- [React implementation](https://github.com/designbylunar/cupid/blob/main/react/src/components/interaction/modal.tsx)
