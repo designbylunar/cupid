@@ -49,7 +49,7 @@ export function Card({
       </div>
       {image && (
         <picture>
-          <source srcset={image} title={imageDesc}/>
+          <source srcSet={image} title={imageDesc} />
           <img src={image} alt={imageDesc} />
         </picture>
       )}
@@ -59,7 +59,7 @@ export function Card({
     <div className="card">
       {image && (
         <picture>
-          <source srcset={image} title={imageDesc}>
+          <source srcSet={image} title={imageDesc} />
           <img src={image} alt={imageDesc} />
         </picture>
       )}
@@ -67,7 +67,7 @@ export function Card({
         <h2>{title}</h2>
         <p>{subtitle}</p>
         {children && ({children})}
-        </div>
+      </div>
     </div>
   )
 }
