@@ -1,6 +1,6 @@
 {
   "name": "@cupid-ui/css",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "A modern framework for building responsive frontends.",
   "main": "dist/cupid-ui.css",
   "style": "dist/cupid-ui.css",
@@ -9,14 +9,17 @@
     "url": "git+https://github.com/designbylunar/cupid-ui.git",
     "directory": "packages/css"
   },
+  "bugs": {
+    "url": "https://github.com/designbylunar/cupid/issues"
+  },
   "files": [
     "README.md",
     "dist"
   ],
   "scripts": {
     "prepublishOnly": "yarn build",
-    "build": ".\\node_modules\\.bin\\esbuild --bundle src/cupid-ui.css --outfile=dist/cupid-ui.css --minify --platform=browser --sourcemap --log-level=debug",
-    "watch": ".\\node_modules\\.bin\\esbuild --bundle src/cupid-ui.css --outfile=dist/cupid-ui.css --minify --platform=browser --sourcemap --log-level=debug --watch",
+    "build": "esbuild --bundle src/cupid-ui.css --outfile=dist/cupid-ui.css --minify --platform=browser --sourcemap --log-level=debug",
+    "watch": "esbuild --bundle src/cupid-ui.css --outfile=dist/cupid-ui.css --minify --platform=browser --sourcemap --log-level=debug --watch",
     "playground": "http-server -b -c-1"
   },
   "author": "The Lunar Design Team <npm@lunardesign.org>",

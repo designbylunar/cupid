@@ -33,6 +33,6 @@ import { Badge } from '@cupid-ui/react';
 <h5>Works with baby headers text! <span class="badge warning">George says hi! Run.</span></h5>
 
 ## More info
-- [CSS implementation](https://github.com/designbylunar/cupid-ui/blob/main/css/src/layout/badge.css)
-- [React implementation](https://github.com/designbylunar/cupid-ui/blob/main/react/src/components/layout/badge.tsx)
+- [CSS implementation](https://github.com/designbylunar/cupid/blob/main/css/src/layout/badge.css)
+- [React implementation](https://github.com/designbylunar/cupid/blob/main/react/src/components/layout/badge.tsx)
 

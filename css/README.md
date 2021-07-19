@@ -2,7 +2,7 @@
 A modern framework for building responsive frontends. [Documentation →](https://designbylunar.github.io/cupid/docs)
 
 Related packages:
-- `@cupid-ui/css`— Cupid in its purest form
+- `@cupid-ui/react`— React bindings for Cupid
 
 ---
 

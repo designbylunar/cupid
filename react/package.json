@@ -1,10 +1,13 @@
 {
   "name": "@cupid-ui/react",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "A modern framework for building responsive frontends in React.",
   "main": "dist/index.js",
   "module": "dist/cupid-ui.esm.js",
   "typings": "dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/designbylunar/cupid/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/designbylunar/cupid-ui.git",
@@ -38,6 +41,9 @@
   },
   "dependencies": {
     "@cupid-ui/css": "0.0.3"
+  },
+  "resolutions": {
+    "@types/react": "17.0.14"
   },
   "devDependencies": {
     "@types/node": "15.6.0",

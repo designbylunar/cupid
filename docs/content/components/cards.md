@@ -56,6 +56,6 @@ import { Card, Button } from '@cupid-ui/react';
 </div>
 
 ## More info
-- [CSS implementation](https://github.com/designbylunar/cupid-ui/blob/main/css/src/layout/card.css)
-- [React implementation](https://github.com/designbylunar/cupid-ui/blob/main/react/src/components/layout/card.tsx)
+- [CSS implementation](https://github.com/designbylunar/cupid/blob/main/css/src/layout/card.css)
+- [React implementation](https://github.com/designbylunar/cupid/blob/main/react/src/components/layout/card.tsx)
 
