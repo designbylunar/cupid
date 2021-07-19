@@ -21,16 +21,26 @@ jobs:
     - name: Build the CSS
       run: yarn run build:css
 
-    - name: Upload the CSS to Github Releases
+    - name: Release to GitHub (CSS)
       uses: softprops/action-gh-release@v1
       env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         files: dist/cupid-ui.css
 
-    - name: Release to NPM
+    - name: Release to NPM (CSS)
       run: |
         npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+        cd css/ 
+        npm publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+
+    - name: Release to NPM (React)
+      run: |
+        npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+        cd react/
         npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
