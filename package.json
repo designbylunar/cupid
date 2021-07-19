@@ -15,8 +15,8 @@
   },
   "scripts": {
     "playground": "yarn workspace @cupid-ui/css playground",
-    "docs:build": "cd docs/ && zola build && cd ..",
-    "docs:watch": "cd docs/ && zola serve && cd ..",
+    "docs:build": "cd docs/ && yarn build && cd ..",
+    "docs:watch": "cd docs/ && yarn dev && cd ..",
     "build:css": "yarn workspace @cupid-ui/css build",
     "build:react": "yarn workspace @cupid-ui/react build",
     "build:all": "yarn build:css && yarn build:react",
