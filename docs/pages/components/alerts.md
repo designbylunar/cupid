@@ -1,10 +1,3 @@
-+++
-title = "Alerts"
-description = "Banner alerts are simple, but need to be crafted carefully to ensure the user understands at a glance what is going on."
-date = 2021-07-17
-insert_anchor_links = "right"
-+++
-
 ## HTML Layout
 ```html
 <p class="alert success"><strong>Woah!</strong> You did something not good, but great!</p>

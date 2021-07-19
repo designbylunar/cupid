@@ -1,8 +1,3 @@
-+++
-title = "Cupid UI"
-sort_by = "date"
-+++
-
 <h2><b>Cupid</b> is a modern framework for building responsive frontends</h2>
 <div class="btn-group">
   <a href="docs/" class="button">

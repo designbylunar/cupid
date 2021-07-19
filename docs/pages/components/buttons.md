@@ -1,10 +1,3 @@
-+++
-title = "Buttons"
-description = "Buttons are something that need no introduction. However, it is hard to carefully create buttons that look good, as well as remains accessible."
-date = 2021-07-17
-insert_anchor_links = "right"
-+++
-
 ## HTML Layout
 ```html
 <a href="#" class="button">

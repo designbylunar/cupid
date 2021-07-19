@@ -14,9 +14,20 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v2
 
-      - name: Build and deploy docs
-        uses: shalzz/zola-deploy-action@v0.13.0
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2.2.0
+        with:
+          node-version: "16.x"
+          
+      - name: Install dependencies with Yarn
+        run: yarn
+        
+      - name: Compile documentation site
+        run: yarn build && yarn export && touch ./out/.nojekyll
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         env:
-          PAGES_BRANCH: gh-pages
-          BUILD_DIR: docs/
-          TOKEN: ${{ secrets.TOKEN }}
+          BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          FOLDER: out

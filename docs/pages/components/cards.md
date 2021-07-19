@@ -1,10 +1,3 @@
-+++
-title = "Cards"
-description = "Cards are an easy way to display information at a glance, as well as route users to other pages or sites."
-date = 2021-07-17
-insert_anchor_links = "right"
-+++
-
 ## HTML Layout
 ```html
 <div class="card">
