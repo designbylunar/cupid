@@ -1,10 +1,3 @@
-+++
-title = "Modals"
-description = "Modals are a powerful way to handle decisions from users, as well as ensure users confirm actions that may have unintended consequences."
-date = 2021-07-17
-insert_anchor_links = "right"
-+++
-
 ## HTML Layout
 ```html
 <div class="modal">

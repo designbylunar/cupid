@@ -1,10 +1,3 @@
-+++
-title = "Introduction"
-description = "Cupid UI is a modern framework for building responsive frontends."
-date = 2021-07-17
-insert_anchor_links = "right"
-+++
-
 ## Quick Start
 
 Setting up Cupid is both simple and quick. [Quick Start →](/docs/getting-started/quick-start/)

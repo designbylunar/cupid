@@ -1,4 +1,7 @@
-# Output used for Zola
-out/
-# Default output
-public/ 
+node_modules
+.next
+.DS_Store
+yarn-error.log
+dist
+examples
+packages
