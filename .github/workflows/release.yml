@@ -23,6 +23,8 @@ jobs:
 
     - name: Upload the CSS to Github Releases
       uses: softprops/action-gh-release@v1
+      env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         files: dist/cupid-ui.css
 
