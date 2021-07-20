@@ -16,6 +16,7 @@
   "scripts": {
     "playground": "yarn workspace @cupid-ui/css playground",
     "docs:build": "cd docs/ && yarn build && cd ..",
+    "docs:export": "cd docs/ && yarn export && cd ..",
     "docs:watch": "cd docs/ && yarn dev && cd ..",
     "build:css": "yarn workspace @cupid-ui/css build",
     "build:react": "yarn workspace @cupid-ui/react build",
