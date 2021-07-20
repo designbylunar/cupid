@@ -20,7 +20,7 @@ jobs:
           node-version: "16.x"
           
       - name: Install dependencies with Yarn
-        run: yarn
+        run: yarn && cd docs/ && yarn
         
       - name: Compile documentation site
         run: yarn docs:build && yarn docs:export && touch ./out/.nojekyll
