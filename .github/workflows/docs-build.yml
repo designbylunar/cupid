@@ -23,7 +23,7 @@ jobs:
         run: yarn && cd docs/ && yarn
         
       - name: Compile documentation site
-        run: yarn docs:build && yarn docs:export && touch ./out/.nojekyll
+        run: yarn docs:build && yarn docs:export && touch docs/out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4

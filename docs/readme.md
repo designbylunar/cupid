@@ -10,3 +10,7 @@ then
 ```
 yarn dev
 ```
+
+## Contributing
+
+TODO: this
