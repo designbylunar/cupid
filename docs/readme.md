@@ -1,3 +1,12 @@
 # Cupid Docs
 
-## This README should be updated.
+## Installation
+
+Clone the repository, then run
+```
+yarn
+```
+then
+```
+yarn dev
+```
