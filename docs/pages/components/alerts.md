@@ -25,6 +25,7 @@ import { Alert } from '@cupid-ui/react';
 - `title` (optional): Must be a `string`. This goes before the rest of the text and is in bold. Solid for a quick detail, followed by more elaborate information about the alert.
 - `text`: Must be a `string`. This is what the alert says.
 - `type`: Can be `"success" | "warning" | "error" | "info"`. Sets the type of button you want.
+- Children elements: Although not technically passed, you can specify child elements to the `<Alert></Alert>`. This allows for ease when using Cupid with tools like MDX. This is an alternative to the `text` parameter.
 
 ## Preview
 <p class="alert success"><strong>Woah!</strong> You did something not good, but great!</p>
