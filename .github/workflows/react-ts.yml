@@ -35,10 +35,6 @@ jobs:
     - name: Fetch dependencies with Yarn
       run: yarn
       
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
     - name: Run a test build
       run: yarn run build:react
 
