@@ -4,6 +4,7 @@ on:
     paths:
       - 'css/**'
       - '!css/playground/**'
+      - '.github/workflows/css-esbuild.yml'
   pull_request:
     paths:
       - 'css/**'

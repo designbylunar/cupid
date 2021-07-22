@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'react/**'
+      - '.github/workflows/react-ts.yml'
   pull_request:
     paths:
       - 'react/**'
