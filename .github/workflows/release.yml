@@ -29,6 +29,9 @@ jobs:
     - name: Fetch dependencies with Yarn
       run: yarn
 
+  build-css:
+    needs: build
+    runs-on: ubuntu-latest
     - name: Build the CSS
       run: yarn run build:css
 
@@ -41,6 +44,9 @@ jobs:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
+  build-react:
+    needs: build
+    runs-on: ubuntu-latest
     - name: Release to NPM (React)
       run: |
         npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}

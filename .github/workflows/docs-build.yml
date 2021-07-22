@@ -35,10 +35,14 @@ jobs:
         
       - name: Compile documentation site
         run: yarn docs:build && yarn docs:export && touch docs/out/.nojekyll
-
+  
+  deploy:
+    runs-on: ubutnu-latest
+    needs: build
+    steps:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         env:
-          BRANCH: gh-pages
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          FOLDER: out
+          branch: gh-pages
+          token: ${{ secrets.TOKEN }}
+          folder: out
