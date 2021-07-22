@@ -42,4 +42,4 @@ jobs:
         with:
           branch: gh-pages
           token: ${{ secrets.TOKEN }}
-          folder: out
+          folder: docs/out/
