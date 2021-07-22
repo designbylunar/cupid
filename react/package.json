@@ -1,6 +1,6 @@
 {
   "name": "@cupid-ui/react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A modern framework for building responsive frontends in React.",
   "main": "dist/index.js",
   "module": "dist/cupid-ui.esm.js",
@@ -40,7 +40,7 @@
     "react": "^17.0.0"
   },
   "dependencies": {
-    "@cupid-ui/css": "0.0.3"
+    "@cupid-ui/css": "1.1.0"
   },
   "resolutions": {
     "@types/react": "17.0.14"
