@@ -11,7 +11,7 @@ You can skip the other steps and add Cupid straight to your site with one line:
 <link href="https://unpkg.com/@cupid-ui/css@1.0.0/dist/cupid-ui.css" rel="stylesheet" crossorigin />
 ```
 
-<Alert title="Heads up!" text="We don't always update the version in that URL. So, check <a href="https://github.com/designbylunar/cupid/releases">for our latest release</a> to ensure you're using the latest version of Cupid." type="warning" />
+<Alert title="Heads up!" type="warning">We don't always update the version in that URL. So, check [for our latest release](https://github.com/designbylunar/cupid/releases) to ensure you're using the latest version of Cupid.</Alert>
 
 ## Using the Node packages
 We're working on packages for Svelte and Vue, but you can still use the offical Node packages for:
