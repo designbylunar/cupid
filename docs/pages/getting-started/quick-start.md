@@ -8,7 +8,7 @@ insert_anchor_links = "right"
 ## Using the hosted versions
 You can skip the other steps and add Cupid straight to your site with one line:
 ```html
-<link href="https://unpkg.com/@cupid-ui/css@1.0.0/dist/cupid-ui.css" rel="stylesheet" crossorigin />
+<link href="https://unpkg.com/@cupid-ui/css@1.1.0/dist/cupid-ui.css" rel="stylesheet" crossorigin />
 ```
 
 <Alert title="Heads up!" type="warning">We don't always update the version in that URL. So, check [for our latest release](https://github.com/designbylunar/cupid/releases) to ensure you're using the latest version of Cupid.</Alert>
