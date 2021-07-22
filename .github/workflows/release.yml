@@ -32,6 +32,7 @@ jobs:
   build-css:
     needs: build
     runs-on: ubuntu-latest
+    steps:
     - name: Build the CSS
       run: yarn run build:css
 
@@ -47,6 +48,7 @@ jobs:
   build-react:
     needs: build
     runs-on: ubuntu-latest
+    steps:
     - name: Release to NPM (React)
       run: |
         npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
