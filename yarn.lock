@@ -917,11 +917,6 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@cupid-ui/css@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@cupid-ui/css/-/css-0.0.3.tgz#7be5e310a394f6ede5903ed48a66390442081857"
-  integrity sha512-xAyHqSZ68xRAM2eaI7nLwGM0W3EcC3jTgFosG0zsNq1WpHr2s23H9ffwc+mxqL6u9mO4pw1qyqXphW0S30gFlA==
-
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -2410,10 +2405,10 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild@0.12.15:
-  version "0.12.15"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.15.tgz#9d99cf39aeb2188265c5983e983e236829f08af0"
-  integrity sha512-72V4JNd2+48eOVCXx49xoSWHgC3/cCy96e7mbXKY+WOWghN00cCmlGnwVLRhRHorvv0dgCyuMYBZlM2xDM5OQw==
+esbuild@0.12.16:
+  version "0.12.16"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.16.tgz#c397144ce13b445a6ead9c1f747da11f79ec5e67"
+  integrity sha512-XqI9cXP2bmQ6MREIqrYBb13KfYFSERsV1+e5jSVWps8dNlLZK+hln7d0mznzDIpfISsg/AgQW0DW3kSInXWhrg==
 
 escalade@^3.1.1:
   version "3.1.1"
