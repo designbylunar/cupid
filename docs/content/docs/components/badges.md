@@ -1,8 +1,6 @@
 +++
 title = "Badges"
 description = "Badges are usually at the end of a headline and used as a way to declare tagging."
-date = 2021-07-17
-insert_anchor_links = "right"
 +++
 
 ## HTML Layout
@@ -35,4 +33,3 @@ import { Badge } from '@cupid-ui/react';
 ## More info
 - [CSS implementation](https://github.com/designbylunar/cupid/blob/main/css/src/layout/badge.css)
 - [React implementation](https://github.com/designbylunar/cupid/blob/main/react/src/components/layout/badge.tsx)
-

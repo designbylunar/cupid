@@ -2,7 +2,6 @@
 title = "Quick Start"
 description = "Settings up Cupid is simple and quick."
 date = 2021-07-17
-insert_anchor_links = "right"
 +++
 
 ## Using the hosted versions

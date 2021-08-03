@@ -1,6 +1,12 @@
++++
+title = "Introduction"
+description = "Meet Cupid: a modern framework for building responsive frontends."
+date = 2021-07-17
++++
+
 ## Quick Start
 
-Setting up Cupid is both simple and quick. [Quick Start →](/docs/getting-started/quick-start/)
+Setting up Cupid is both simple and quick. [Quick Start →](/docs/quick-start/)
 
 ## Usage recommendations
 ### Fonts
@@ -13,6 +19,3 @@ The colours we use are [WCAG AAA compliant](https://webaim.org/articles/contrast
 
 Find out how to contribute to Cupid. [Contributing →](/docs/contributing/how-to-contribute/)
 
-## Help
-
-Get help on Doks. [Help →](/docs/help/faq/)

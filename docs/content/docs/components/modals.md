@@ -1,3 +1,7 @@
++++
+title = "Modals"
++++
+
 ## HTML Layout
 ```html
 <div class="modal">

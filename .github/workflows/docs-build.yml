@@ -7,6 +7,7 @@ on:
   pull_request:
     paths:
       - 'docs/**'
+      - '.github/workflows/docs-build.yml'
 
 jobs:
   build:
@@ -14,37 +15,9 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
-      - name: Cache node modules
-        uses: actions/cache@v2
+      - name: shalzz/zola-deploy-action
+        uses: shalzz/zola-deploy-action@master
         env:
-          cache-name: cache-node-modules
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      - name: Cache Next hashFiles
-        uses: actions/cache@v2
-        with:
-          path: ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
-
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2.3.0
-        with:
-          node-version: "16.x"
-          
-      - name: Install dependencies with Yarn
-        run: yarn && cd docs/ && yarn
-        
-      - name: Compile documentation site
-        run: yarn docs:build && yarn docs:export && touch docs/.nojekyll && touch docs/out/.nojekyll
-  
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages
-          token: ${{ secrets.TOKEN }}
-          folder: docs/out/
+          PAGES_BRANCH: gh-pages
+          BUILD_DIR: docs/
+          TOKEN: ${{ secrets.TOKEN }}

@@ -1,3 +1,7 @@
++++
+title = "Buttons"
++++
+
 ## HTML Layout
 ```html
 <a href="#" class="button">
@@ -58,4 +62,3 @@ import { 'Button' } from '@cupid-ui/react';
 ## More info
 - [CSS implementation](https://github.com/designbylunar/cupid/blob/main/css/src/interaction/button.css)
 - [React implementation](https://github.com/designbylunar/cupid/blob/main/react/src/components/interaction/button.tsx)
-

@@ -1,3 +1,7 @@
++++
+title = "Alerts"
++++
+
 ## HTML Layout
 ```html
 <p class="alert success"><strong>Woah!</strong> You did something not good, but great!</p>
@@ -36,4 +40,3 @@ import { Alert } from '@cupid-ui/react';
 ## More info
 - [CSS implementation](https://github.com/designbylunar/cupid/blob/main/css/src/layout/alert.css)
 - [React implementation](https://github.com/designbylunar/cupid/blob/main/react/src/components/layout/alert.tsx)
-
