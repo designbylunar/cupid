@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{section.title}} - Cupid by Lunar{% endblock title %}
+{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
+{% block ogtitle %}{{ section.title }}{% endblock ogtitle %}
+{% block ogdesc %}{{ section.description }}{% endblock ogdesc %}
+{% block ogurl %}{{ section.permalink | safe }}{% endblock ogurl%}
+{% block ogimage -%}{%- if section.extra.image -%}{{ get_url(path=section.extra.image) | safe }}{%else%}{{ get_url(path=config.extra.ogimage) | safe }}{%- endif -%}{%- endblock ogimage %}
+
+
+{% block content %}
+<h1>{{section.title}}</h1>
+{{ section.content | safe }}
+{% endblock content %}
+
+{% block toc %}
+{% include "partials/footer.html" %}
+{% endblock toc %}

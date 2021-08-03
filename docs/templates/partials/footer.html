@@ -1,0 +1,13 @@
+{% set section = get_section(path="docs/_index.md") %}
+<div>
+  <b>Table of Contents</b><br/>
+  <a href="/docs">Introduction</a>
+  <a href="/docs/quick-start">Quick-start<br/></a>
+  {% for p in section.subsections %}
+  {% set subsection = get_section(path=p) %}
+    <b>{{ subsection.title }}<br/></b>
+    {% for page in subsection.pages %}
+      <a href="{{page.permalink}}">{{page.title}}</a>
+    {% endfor %}
+  {% endfor %}
+</div>
