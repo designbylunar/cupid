@@ -1,8 +1,8 @@
 {% set section = get_section(path="docs/_index.md") %}
 <div>
   <b>Table of Contents</b><br/>
-  <a href="get_url(path="@/docs/_index.md")">Introduction</a>
-  <a href="get_url(path="@/docs/quick-start.md")">Quick-start<br/></a>
+  <a href="{{ get_url(path="@/docs/_index.md") }}">Introduction</a>
+  <a href="{{ get_url(path="@/docs/quick-start.md") }}">Quick-start<br/></a>
   {% for p in section.subsections %}
   {% set subsection = get_section(path=p) %}
     <b>{{ subsection.title }}<br/></b>
