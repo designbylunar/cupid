@@ -1,12 +1,12 @@
 base_url = "https://designbylunar.github.io/cupid"
 
 title = "Cupid - Lunar Design"
-description = ""
+description = "Cupid is a modern framework for building responsive frontends"
 
 default_language = "en"
 
 compile_sass = true
-output_dir = "out"
+output_dir = "public"
 
 build_search_index = false
 
