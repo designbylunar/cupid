@@ -46,7 +46,7 @@ import { Modal, Button } from '@cupid-ui/react';
 ### Parameters
 - `title`: Must be a `string`. The main text of the modal (eg. the notice being provided)
 - `subtext`: Must be a `string`. The text below the notice (eg. blurb about what the modal's action will cause)
-- Children elements: Although not technically passed, you do need to specify a child element to the ``<Modal></Modal>` (eg. `<Button/>` for the modal to interact with)
+- Children elements: Although not technically passed, you do need to specify a child element to the `<Modal></Modal>` (eg. `<Button/>` for the modal to interact with)
 
 ## Preview
 <div class="modal">
