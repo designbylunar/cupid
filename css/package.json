@@ -31,6 +31,6 @@
     "http-server": "13.0.1"
   },
   "dependencies": {
-    "esbuild": "0.12.22"
+    "esbuild": "0.12.23"
   }
 }
