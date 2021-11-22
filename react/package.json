@@ -43,12 +43,12 @@
     "@cupid-ui/css": "1.1.0"
   },
   "resolutions": {
-    "@types/react": "17.0.35"
+    "@types/react": "17.0.36"
   },
   "devDependencies": {
     "@types/node": "16.11.9",
     "@types/react-dom": "17.0.11",
-    "@types/react": "17.0.35",
+    "@types/react": "17.0.36",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   }
