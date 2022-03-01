@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://designbylunar.github.io/cupid/style.css" rel="stylesheet">
+  <link href="https://unpkg.com/@cupid-ui/css@1.0.0/dist/cupid-ui.css" rel="stylesheet" crossorigin />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>Badges - Cupid by Lunar</title>
+  <link rel="author" href="humans.txt" />
+  <meta name="description" content="Badges are usually at the end of a headline and used as a way to declare tagging." />
+  <meta property="og:site_name" content="Cupid - Lunar Design" />
+  <meta name="author" content="Lunar Design" />
+
+  <meta property="og:title" content="Badges" />
+  <meta name="twitter:title" content="Cupid - Lunar Design" />
+
+  <meta property="og:description" content="Badges are usually at the end of a headline and used as a way to declare tagging." />
+  <meta name="twitter:description" content="Cupid is a modern framework for building responsive frontends" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta propetry="og:type" content="website" />
+
+  <meta property="og:url" content="https://designbylunar.github.io/cupid/docs/components/badges/" />
+  <meta name="twitter:site" content="@doamatto" />
+  <meta name="twitter:creator" content="@doamatto" /></head>
+<body>
+  <nav>
+    <h1><a href="https://designbylunar.github.io/cupid/index.html">Cupid</a></h1>
+    <ul>
+      <li>
+        <a href="https://designbylunar.github.io/cupid/docs/">
+          Docs
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/designbylunar/cupid">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    
+
+<div>
+  <b>Table of Contents</b><br/>
+  <a href="https://designbylunar.github.io/cupid/docs/">Introduction</a>
+  <a href="https://designbylunar.github.io/cupid/docs/quick-start/">Quick-start<br/></a>
+  
+  
+    <b>Components<br/></b>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;badges&#x2F;">Badges</a>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;cards&#x2F;">Cards</a>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;modals&#x2F;">Modals</a>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;buttons&#x2F;">Buttons</a>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;alerts&#x2F;">Alerts</a>
+    
+  
+</div>
+
+
+  </nav>
+  <div class="container">
+    
+<h1>Badges</h1>
+<h2 id="html-layout">HTML Layout</h2>
+<pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#bf616a;">p</span><span>&gt;Something brand-spanking new! &lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">badge info</span><span>&quot;&gt;New!&lt;/</span><span style="color:#bf616a;">span</span><span>&gt;&lt;/</span><span style="color:#bf616a;">p</span><span>&gt;
+</span><span>&lt;</span><span style="color:#bf616a;">p</span><span>&gt;To show you the power of Lunar Design.. &lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">badge</span><span>&quot;&gt;I made this badge!&lt;/</span><span style="color:#bf616a;">span</span><span>&gt;&lt;/</span><span style="color:#bf616a;">p</span><span>&gt;
+</span><span>&lt;</span><span style="color:#bf616a;">h5</span><span>&gt;Works with baby headers text! &lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">badge warning</span><span>&quot;&gt;George says hi! Run.&lt;/</span><span style="color:#bf616a;">span</span><span>&gt;&lt;/</span><span style="color:#bf616a;">h5</span><span>&gt;
+</span></code></pre>
+<p><strong>Supported statuses:</strong> Success, warning, error, info. Okay to omit.</p>
+<h2 id="react-layout">React Layout</h2>
+<pre data-lang="tsx" style="background-color:#2b303b;color:#c0c5ce;" class="language-tsx "><code class="language-tsx" data-lang="tsx"><span style="color:#b48ead;">import </span><span>{ </span><span style="color:#bf616a;">Badge </span><span>} </span><span style="color:#b48ead;">from </span><span>&#39;</span><span style="color:#a3be8c;">@cupid-ui/react</span><span>&#39;;
+</span><span>
+</span><span style="color:#65737e;">// [...]
+</span><span>
+</span><span>&lt;</span><span style="color:#bf616a;">p</span><span>&gt;Something brand-spaking new! &lt;</span><span style="color:#ebcb8b;">Badge </span><span style="color:#d08770;">text</span><span>=&quot;</span><span style="color:#a3be8c;">New!</span><span>&quot; </span><span style="color:#d08770;">type</span><span>=&quot;</span><span style="color:#a3be8c;">info</span><span>&quot;/&gt;&lt;/</span><span style="color:#bf616a;">p</span><span>&gt;
+</span></code></pre>
+<h3 id="parameters">Parameters</h3>
+<ul>
+<li><code>text</code>: Must be a <code>string</code>. This is what the badge says.</li>
+<li><code>type</code> (optional): Can be &quot;success&quot; | &quot;warning&quot; | &quot;error&quot; | &quot;info&quot;. Sets the type of badge you want.</li>
+</ul>
+<h2 id="preview">Preview</h2>
+<p>Something brand-spanking new! <span class="badge info">New!</span></p>
+<p>To show you the power of Lunar Design.. <span class="badge">I made this badge!</span></p>
+<h5>Works with baby headers text! <span class="badge warning">George says hi! Run.</span></h5>
+<h2 id="more-info">More info</h2>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://github.com/designbylunar/cupid/blob/main/css/src/layout/badge.css">CSS implementation</a></li>
+<li><a rel="noopener" target="_blank" href="https://github.com/designbylunar/cupid/blob/main/react/src/components/layout/badge.tsx">React implementation</a></li>
+</ul>
+
+
+  </div>
+  <footer>
+    <p>&copy; 2020-2021 &mdash; <a href="https://github.com/designbylunar">The Lunar Design Team</a> and <a href="https://github.com/designbylunar/cupid/graphs/contributors">contributors</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://designbylunar.github.io/cupid/style.css" rel="stylesheet">
+  <link href="https://unpkg.com/@cupid-ui/css@1.0.0/dist/cupid-ui.css" rel="stylesheet" crossorigin />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>Quick Start - Cupid by Lunar</title>
+  <link rel="author" href="humans.txt" />
+  <meta name="description" content="Settings up Cupid is simple and quick." />
+  <meta property="og:site_name" content="Cupid - Lunar Design" />
+  <meta name="author" content="Lunar Design" />
+
+  <meta property="og:title" content="Quick Start" />
+  <meta name="twitter:title" content="Cupid - Lunar Design" />
+
+  <meta property="og:description" content="Settings up Cupid is simple and quick." />
+  <meta name="twitter:description" content="Cupid is a modern framework for building responsive frontends" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta propetry="og:type" content="website" />
+
+  <meta property="og:url" content="https://designbylunar.github.io/cupid/docs/quick-start/" />
+  <meta name="twitter:site" content="@doamatto" />
+  <meta name="twitter:creator" content="@doamatto" /></head>
+<body>
+  <nav>
+    <h1><a href="https://designbylunar.github.io/cupid/index.html">Cupid</a></h1>
+    <ul>
+      <li>
+        <a href="https://designbylunar.github.io/cupid/docs/">
+          Docs
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/designbylunar/cupid">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    
+
+<div>
+  <b>Table of Contents</b><br/>
+  <a href="https://designbylunar.github.io/cupid/docs/">Introduction</a>
+  <a href="https://designbylunar.github.io/cupid/docs/quick-start/">Quick-start<br/></a>
+  
+  
+    <b>Components<br/></b>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;badges&#x2F;">Badges</a>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;cards&#x2F;">Cards</a>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;modals&#x2F;">Modals</a>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;buttons&#x2F;">Buttons</a>
+    
+      <a href="https:&#x2F;&#x2F;designbylunar.github.io&#x2F;cupid&#x2F;docs&#x2F;components&#x2F;alerts&#x2F;">Alerts</a>
+    
+  
+</div>
+
+
+  </nav>
+  <div class="container">
+    
+<h1>Quick Start</h1>
+<h2 id="using-the-hosted-versions">Using the hosted versions</h2>
+<p>You can skip the other steps and add Cupid straight to your site with one line:</p>
+<pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">href</span><span>=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@cupid-ui/css@1.1.0/dist/cupid-ui.css</span><span>&quot; </span><span style="color:#d08770;">rel</span><span>=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span>&quot; </span><span style="color:#d08770;">crossorigin </span><span>/&gt;
+</span></code></pre>
+<p><Alert title="Heads up!" type="warning">We don't always update the version in that URL. So, check <a rel="noopener" target="_blank" href="https://github.com/designbylunar/cupid/releases">for our latest release</a> to ensure you're using the latest version of Cupid.</Alert></p>
+<h2 id="using-the-node-packages">Using the Node packages</h2>
+<p>We're working on packages for Svelte and Vue, but you can still use the offical Node packages for:</p>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://www.npmjs.com/package/@cupid-ui/css">CSS (<code>@cupid-ui/css</code>)</a></li>
+<li><a rel="noopener" target="_blank" href="https://www.npmjs.com/package/@cupid-ui/react">React (<code>@cupid-ui/react</code>)</a></li>
+</ul>
+<h2 id="building-from-source">Building from source</h2>
+<p>You will need:</p>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://nodejs.org">Node.js</a> v16.x; and:</li>
+<li><a rel="noopener" target="_blank" href="https://yarnpkg.com">Yarn</a>.</li>
+</ul>
+<p>From there, you will need to install the dependencies for Cupid. After cloning the repository from GitHub (<code>git clone https://github.com/designbylunar/cupid-ui cupid/</code>), run <code>yarn</code>. After that finishes, there are a few paths you can take:</p>
+<ul>
+<li>to build the CSS, run <code>yarn run-script build:css</code>,</li>
+<li>to build the React components, run <code>yarn run-script build:react</code>,</li>
+<li>to build all packages, run <code>yarn run-script build:all</code></li>
+</ul>
+<p>For CSS, you will find the compiled CSS in <code>css/dist/cupid-ui.css</code>. For React, the components will be in <code>react/dist/components/...</code>.</p>
+<hr />
+<p>Once you have Cupid installed, you're ready to start implementing components</p>
+
+
+  </div>
+  <footer>
+    <p>&copy; 2020-2021 &mdash; <a href="https://github.com/designbylunar">The Lunar Design Team</a> and <a href="https://github.com/designbylunar/cupid/graphs/contributors">contributors</a></p>
+  </footer>
+</body>
+</html>
